@@ -15,11 +15,11 @@
 }
 
 .site-main {
-  @include section_padding(2em);
+ /* @include section_padding(2em);
 
   @include media($medium-screen) {
     @include section_padding(5em);
-  }
+  }*/
 }
 
 .site-footer {
