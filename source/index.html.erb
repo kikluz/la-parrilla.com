@@ -1,30 +1,121 @@
 ---
-title: Middleman is Loaded
+title: Casa Oaxaca
 ---
-<div id="Fader" class="fader hero-overflow">
-  <%= image_tag '../assets/images/laparilla.png', class: 'slide' %>
-  <%= image_tag '../assets/images/lp.jpg', class: 'slide' %>
-  <%= image_tag '../assets/images/laparilla.png', class: 'slide' %>
-  <%= image_tag '../assets/images/laparrilla.jpg', class: 'slide' %>
 
-    <div class="fader_controls">
-      <div class="page prev" data-target="prev">&lsaquo;</div>
-      <div class="page next" data-target="next">&rsaquo;</div>
-      <ul class="pager_list"></ul>
-    </div>
-</div>
-<!--<%= image_tag '../assets/images/laparilla.png' %>-->
-<div class="container">
-	<div class="main-content">
-		<p>
-			We welcome you to come and join us for a delicious dining experience filled with high-quality, fast, and friendly service! Our mission is to make this feel like Your La Parrilla!
-		</p>
-	</div>
+<div class="hero-slideshow">
+  <figure class="show">
+    <%= image_tag 'flatdesign.jpg', width:'100%' %>
+     <figcaption>
+      <h1>Casa Oaxaca </h1>
+      <p>
+        A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <%= image_tag 'demo-app.png', width:'100%'  %>
+    <figcaption>
+      <h1>KipTraq (“Keep-Track”) </h1>
+      <p>
+        A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
+      </p>
+    </figcaption> 
+  </figure>
+
+  <figure>
+     <%= image_tag 'calendar.png', width:'100%' %>
+     <figcaption>
+      KipTraq (“Keep-Track”)
+      <p>
+        A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <%= image_tag 'uxdesign.jpg', width:'100%' %>
+    <figcaption>
+      KipTraq (“Keep-Track”)
+      <p>
+        A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
+      </p>
+    </figcaption> 
+  </figure>
+
+  <figure>
+    <%= image_tag 'demo-app.png' %>
+    <figcaption>
+      KipTraq (“Keep-Track”)
+      <p>
+        A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
+      </p>
+    </figcaption> 
+  </figure>
+
+    <figure>
+    <img src="http://themarklee.com/wp-content/uploads/2013/12/driving-home-for-christmas.jpg" width="100%" /><figcaption>
+      KipTraq (“Keep-Track”)
+      <p>
+        A highly configurable phone/tablet application that streamlines an organization's asset tracking and maintenance requirements.
+      </p>
+    </figcaption> 
+  </figure>
+
+  <span class="prev">&laquo;</span>
+  <span class="next">&raquo;</span>
+</div>  
+
+<div class="container module">
+  <div class="main-info">
+    <h4>
+      Our mission is to provide customers with the finest Mexican products for gifts, home, and garden.
+    </h4>
+    <p>
+      While everything in the store comes from various regions throughout Mexico, the majority of our merchandise comes from the State of Oaxaca.  Guillermo ("Memo") Robles (the owner) makes frequent trips to various regions of Mexico (such as Mexico, Puebla, Chiapas, Oaxaca and Guerrero) with his family to individually select each piece he brings back to the store.
+    </p>
+    <p> 
+      All purchasing trips are made with the customers' wants and tastes in mind.
+    </p>
+  </div>
 </div>
 
-<!--
-<i class="fa fa-1x fa-flash"></i>
-<i class="fa fa-2x fa-flash"></i>
-<i class="fa fa-3x fa-flash"></i>
--->
+<div class="container module">
+  <div class="grid-items-lines">
+    <% link_to '/merchandise', class: 'grid-item' do %>
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
+
+      <h1>Merchandise</h1>
+      <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+    <% end %>
+
+    <% link_to '/special_items', class: 'grid-item' do %>
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
+      <h1>Special Items</h1>
+      <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.</p>
+    <% end %>
+
+      <% link_to '/special_events', class: 'grid-item' do %>
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+        <h1>Special Events</h1>
+        <p>Lorem ipsum dolor sit amet, elit.</p>
+      <% end %>
+
+    <div class="right-cover"></div>
+    <div class="bottom-cover"></div>
+  </div>
+</div>
+
+<div class="container module">
+  <section class="intro">
+    <div class="container-section">
+      <p>
+        Casa Oaxaca buys directly from Mexican crafts people and artistic groups such as the
+        Oaxacan Artesan Womens' Group at competitive prices.
+      </p>
+      <a class="btn" href="/">Learn More</a>
+    </div><!-- .container -->
+  </section>
+</div>
+
 

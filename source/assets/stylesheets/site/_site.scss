@@ -10,17 +10,11 @@
 
 .site-header {
   position: relative;
-	@include clearfix;
-	background-color: #EFE8D5;
+  @include clearfix;
+  background-color: #EFE8D5;
 }
 
-.site-main {
- /* @include section_padding(2em);
-
-  @include media($medium-screen) {
-    @include section_padding(5em);
-  }*/
-}
+.site-main {}
 
 .site-footer {
   @include section_padding(1em);
@@ -35,219 +29,218 @@ h1, h2, h3,
 h4, h5, h6 {
   line-height: 1; // Set line-height smaller on larger fonts
 }
+p { font-family: "brandon-grotesque",sans-serif;}
+
 
 // ------------------------------------------------------------
-// Site Nav
+// SLideSho on click http://codepen.io/leemark/pen/Ddgsx
 // ------------------------------------------------------------
-
-.site-nav {
-	@include clearfix;
-
-	.navbar-brand {
-		display: block;
-    line-height: 0;
-    padding: 2em 0;
-    float: left;
-    line-height: 0;
-
-    @include media($medium-screen) {
-      padding: 2em;
-		}
-
-    i {
-      font-size: 3em;
-      line-height: 0;
-      display: block;
-      color: #002B36;
-    }
-	}
-
-	.site-logo {
-		display: block;
-		border-radius: 100%;
-		margin: auto;
-	}
-
-	.nav-links {
-		height: 0;
-		overflow: hidden;
-		float: right;
-
-		@include media($medium-screen) {
-			height: auto;
-		}
-
-		a {
-			@include trailing-hovers;
-			@include media($medium-screen) {
-				display: block;
-				float: left;
-				line-height: 0;
-        font-weight: bold;
-        color: #444;
-
-        // I removed the top and bottom padding of the header
-        // and fattened up the touch targets on these links.
-        // Now they're easier to click.
-				padding: 1.5em;
-
-        &:hover {
-          background: #002B36;
-          color: #EFE8D5;
-        }
-			}
-		}
-
-		.nav-right {
-			@include media($medium-screen) {
-				float: right;
-			}
-		}
-	}
-}
-
-// ------------------------------------------------------------
-// Mobile Menu
-// ------------------------------------------------------------
-
-.mobile-menu {
-	position: absolute;
-	top: 2em;
-	right: 1.5em;
-	z-index: 2;
-
-	@include media($medium-screen) {
-		display: none;
-	}
-
-  i {
-    font-size: 2em;
-    line-height: 0;
-    display: block;
-    color: #002B36;
+.hero-slideshow {
+  img {
+    width: 100%;
+    height: auto;
   }
-
-	.icon {
-		display: block;
-		font-size: 2em;
-		cursor: pointer;
-	}
-}
-
-// Menu active
-.menu-active {
-
-	.nav-links {
-		height: auto;
-		overflow: auto;
-    position: absolute;
-    z-index: 999;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: rgba(239,232,213,.95);
-    box-shadow: 0 10px 10px rgba(0,43,54,.4);
-
-		a {
-			display: block;
-			margin: 2em 0;
-			text-align: center;
-      color: #002B36;
-		}
-	}
-}
-
-// ------------------------------------------------------------
-// Image on slideshow
-// ------------------------------------------------------------
-/*#hero-overflow {
-  z-index: -10; // add z-index to make it work
-  @include clearfix;
-   position: relative;
-  margin-bottom: 0px;
-  width: 100%;
+  position: relative;
+  display: block;
+  max-height: 600px;
   overflow: hidden;
-  height:200px;
-
-  @include media($medium-screen) {
-    height:450px;
+  p {
+    margin: 10px 20px;
+    color: #fff;
   }
-
-  div{
-    z-index: -10;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display:none;
-    position:absolute; left:0; top:0; 
+  a {
+   color:#fff;
   }
-
-  // move images to index page to find the path
 }
-*/
-.main-content {
-	@include media($medium-screen) {
-	padding: 100px;
-	width: 100%;
-}
- p {
-  font-size: 1.5em;
- 
-}
-}
-
-// this is a doemo for slideshow
-
-.fader{
-	@include clearfix;
-    position: relative;
-    padding-top: 60%;
-    overflow: hidden;   
-} 
- 
-.fader .slide{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 1;
-    opacity: 0;
-}
- 
-.fader img.slide{
-    height: 400;
-    max-width: 100%
-}
-
-.fader .prev,
-.fader .next{
+figure {
   position: absolute;
-  height: 80px;
-  line-height: 55px;
-  width: 50px;
-  font-size: 100px;
-  text-align: center;
-  color: #fff;
-  top: 50%;
-  left: 0;
-  z-index: 4;
-  margin-top: -25px;
-  cursor: pointer;
-  opacity: .7;
-  transition: all 150ms;
+  opacity: 0;
+  transition: 1s opacity;
+}
+figcaption {
+  position: absolute;
+    @include media($medium-screen) {
+    font-family: sans-serif;
+    font-size: .8em;
+    bottom: .75em;
+    right: .35em;
+    padding: .25em;
+    color: #fff;
+    background: rgba(0,0,0, .25);
+    border-radius: 2px; 
+    a { color: #fff;}
+  }
 }
 
-.fader .prev:hover,
-.fader .next:hover{
+figure.show {
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+.next, .prev {
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none;
+}
+.next:hover, .prev:hover {
+  cursor: pointer;
   opacity: 1;
 }
-
-.fader .next{
-  left: auto;
+.next {
   right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.prev {
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
+// ------------------------------------------------------------
+// Conatiner section
+// ------------------------------------------------------------ 
+.main-info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container-section {
+  @include media($medium-screen) {
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+    p {
+      font-size: 2em;
+      font-weight: 400;
+      margin: 0 auto 1em;
+      max-width: 90%;
+      text-align: center;
+      line-height: 1.4;
+    }
+  }
+  a {
+    background: #d8544b;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}
 
+// ------------------------------------------------------------
+// Three columns
+// ------------------------------------------------------------
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
 
+.grid-items-lines {
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: $base-background-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+  position: relative;
+    
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    border-bottom: $grid-item-border;
+    border-right: $grid-item-border;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    &:focus,
+    &:hover {
+      background: transparentize($grid-item-color, 0.95);
+    }
+  }
+
+  .grid-item img {
+    display: block;
+    height: 2.5em;
+    margin-bottom: 1.2em;
+    opacity: 0.2;
+  }
+
+  .grid-item h1 {
+    color: $grid-item-color;
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
+
+  .grid-item p {
+    color: transparentize($grid-item-color, 0.4);
+    line-height: 1.5em;
+    
+    @include media($medium-screen) {
+      max-width: 70%;
+    }
+  }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  
+// this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    background: $grid-items-background;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: $grid-items-background;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px;
+  }
+}
+// ------------------------------------------------------------
+// css for Pages
+// ------------------------------------------------------------ 
