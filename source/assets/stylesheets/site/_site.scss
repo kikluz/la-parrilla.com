@@ -20,7 +20,17 @@
   @include section_padding(1em);
   border-top: 1px solid #eee;
 }
-
+.section-footer {
+    @include media($medium-screen) {
+    font-family: "LifeLT-Roman",Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    @include outer-container;
+    aside { @include span-columns(9); }
+    article { @include span-columns(3); }
+  }
+}
 // ------------------------------------------------------------
 // Typography
 // ------------------------------------------------------------
@@ -242,5 +252,5 @@ figure.show {
   }
 }
 // ------------------------------------------------------------
-// css for Pages
+// Footer section
 // ------------------------------------------------------------ 
