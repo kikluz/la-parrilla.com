@@ -35,6 +35,7 @@
     height: 0;
     overflow: hidden;
     z-index: 2;
+    float: right;
     @include media($medium-screen) {
       height: auto;
     }
