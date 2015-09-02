@@ -123,32 +123,6 @@ figure.show {
   margin: 0 auto;
   width: 100%;
 }
-.container-section {
-  @include media($medium-screen) {
-  padding-top: 30px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-    p {
-      font-size: 2em;
-      font-weight: 400;
-      margin: 0 auto 1em;
-      max-width: 90%;
-      text-align: center;
-      line-height: 1.4;
-    }
-  }
-  a {
-    background: #d8544b;
-    color: #fff;
-    display: inline-block;
-    font-size: 0.7em;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    padding: 10px;
-    text-transform: uppercase;
-  }
-}
 
 // ------------------------------------------------------------
 // Three columns
@@ -251,5 +225,5 @@ figure.show {
   }
 }
 // ------------------------------------------------------------
-// Footer section
+// 
 // ------------------------------------------------------------ 
