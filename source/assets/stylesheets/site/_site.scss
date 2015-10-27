@@ -17,14 +17,19 @@
 .site-main {}
 
 .site-footer {
+  text-align: center;
   @include section_padding(1em);
   border-top: 1px solid #eee;
+  ul li{
+    display: inline;
+    margin-right: 3em;
+  }
 }
 .section-footer {
     @include media($medium-screen) {
     font-family: "LifeLT-Roman",Helvetica,sans-serif;
     line-height: 28px;
-    text-align: left;
+    text-align: center;
     @include outer-container;
     aside { @include span-columns(8); }
     article { @include span-columns(4); }
@@ -38,7 +43,10 @@ h1, h2, h3,
 h4, h5, h6 {
   line-height: 1; // Set line-height smaller on larger fonts
 }
-p { font-family: "proxima_novalight","brandon-grotesque",sans-serif;}
+p { 
+  font-family: "proxima_novalight","brandon-grotesque",sans-serif;
+  color: #5e5e5e;
+}
 
 // ------------------------------------------------------------
 // SLideSho on click http://codepen.io/leemark/pen/Ddgsx
@@ -64,6 +72,10 @@ figure {
   position: absolute;
   opacity: 0;
   transition: 1s opacity;
+  //  The problem was being caused by fractional widths. For example using 100% width
+// https://css-tricks.com/forums/topic/css3-transition-opacity-causing-glitch-in-images/
+  -webkit-transform: translateZ(0);
+  width: calc(100% + .49px);
 }
 figcaption {
   position: absolute;
@@ -115,7 +127,7 @@ figure.show {
 // ------------------------------------------------------------
 // main info class
 // ------------------------------------------------------------
-.mian-info {
+.main-info {
   @include media($large-screen) {
     padding: 130px 0;
     p {
@@ -136,7 +148,7 @@ figure.show {
   @include media($large-screen) {
     height: 400px;
   }
-  background: url(../images/bg-dish.png);
+  background: url(../images/demo-parrilla.png);
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -190,6 +202,10 @@ figure.show {
       @include span-columns(4); 
     }
   }
+}
+
+.second-pannel {
+  background-color: #ffe4a9;
 }
 
 
