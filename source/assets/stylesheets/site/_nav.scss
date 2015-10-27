@@ -48,7 +48,7 @@
         float: left;
         line-height: 0;
         font-weight: bold;
-        color: #444;
+        color: #FFA89F;
 
         // I removed the top and bottom padding of the header
         // and fattened up the touch targets on these links.
@@ -56,7 +56,7 @@
         padding: 1.5em;
 
         &:hover {
-          background: #002B36;
+          background: #e96c60;
           color: #EFE8D5;
         }
       }

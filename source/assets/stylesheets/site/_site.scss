@@ -11,7 +11,7 @@
 .site-header {
   position: relative;
   @include clearfix;
-  background-color: #EFE8D5;
+  background-color: #e74c3c;
 }
 
 .site-main {}
@@ -38,8 +38,7 @@ h1, h2, h3,
 h4, h5, h6 {
   line-height: 1; // Set line-height smaller on larger fonts
 }
-p { font-family: "brandon-grotesque",sans-serif;}
-
+p { font-family: "proxima_novalight","brandon-grotesque",sans-serif;}
 
 // ------------------------------------------------------------
 // SLideSho on click http://codepen.io/leemark/pen/Ddgsx
@@ -113,6 +112,17 @@ figure.show {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+// ------------------------------------------------------------
+// main info class
+// ------------------------------------------------------------
+.mian-info {
+    padding: 130px 0;
+  p {
+    line-height: 2;
+    font-size: 2.2rem;
+  }
+}
 
+/// 
 
 
