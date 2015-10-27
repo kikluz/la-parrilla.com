@@ -116,18 +116,31 @@ figure.show {
 // main info class
 // ------------------------------------------------------------
 .mian-info {
+  @include media($large-screen) {
     padding: 130px 0;
+    p {
+      line-height: 2;
+      font-size: 2.2rem;
+    }
+  }
+  // mobile 
   p {
     line-height: 2;
-    font-size: 2.2rem;
+    font-size: 1em;
   }
 }
 // ------------------------------------------------------------
 // Three column with pannel 
 // ------------------------------------------------------------
 .bgimage-pannel {
-  background-color: #4ebe7f;
-  padding: 100px 0;
+  @include media($large-screen) {
+    height: 400px;
+  }
+  background: url(../images/pannel_background.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .three-col {
   @include outer-container;
@@ -157,7 +170,7 @@ figure.show {
     opacity: 1;
     -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255,255,255,.4);
   }
   .group-quote {
     background-color: #FAEBD7;  
