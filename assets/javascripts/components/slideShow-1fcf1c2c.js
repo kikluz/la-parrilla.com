@@ -1,0 +1,1 @@
+var counter=0,$items=$(".hero-slideshow figure"),numItems=$items.length,showCurrent=function(){var e=Math.abs(counter%numItems);$items.removeClass("show"),$items.eq(e).addClass("show")};$(".next").on("click",function(){counter++,showCurrent()}),$(".prev").on("click",function(){counter--,showCurrent()});
