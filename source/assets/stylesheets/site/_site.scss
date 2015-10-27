@@ -119,15 +119,15 @@ figure.show {
   @include media($large-screen) {
     padding: 130px 0;
     p {
-      line-height: 2;
-      font-size: 2.2rem;
-    }
+    line-height: 0.2;
+    font-size: 0.2em;
   }
-  // mobile 
+  }
+  // mobile
   p {
-    line-height: 2;
-    font-size: 1em;
-  }
+      line-height: 2;
+      font-size: 2em;
+    } 
 }
 // ------------------------------------------------------------
 // Three column with pannel 
@@ -136,7 +136,8 @@ figure.show {
   @include media($large-screen) {
     height: 400px;
   }
-  background: url(../images/pannel_background.png);
+  background: url(../images/bg-dish.png);
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
