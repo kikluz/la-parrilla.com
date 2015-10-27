@@ -133,18 +133,17 @@ figure.show {
 // main info class
 // ------------------------------------------------------------
 .main-info {
+  padding: 50px 0;
+  p {
+    line-height: 1.2;
+    font-size: 1.2em;  
+  } 
   @include media($large-screen) {
     padding: 130px 0;
     p {
-    line-height: 0.2;
-    font-size: 0.2em;
-  }
-  }
-  // mobile
-  p {
-      line-height: 1;
-    font-size: 1.4em;
-    } 
+      font-size: 2em;
+    }
+  }  
 }
 // ------------------------------------------------------------
 // Three column with pannel 
@@ -211,6 +210,17 @@ figure.show {
 
 .second-pannel {
   background-color: #ffe4a9;
+  padding: 50px 0;
+  p {
+    line-height: 1.2;
+    font-size: 1.2em;  
+  } 
+  @include media($large-screen) {
+    padding: 130px 0;
+    p {
+      font-size: 2em;
+    }
+  }
 }
 
 
