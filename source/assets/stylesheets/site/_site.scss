@@ -20,9 +20,12 @@
   text-align: center;
   @include section_padding(1em);
   border-top: 1px solid #eee;
-  ul li{
-    display: inline;
-    margin-right: 3em;
+  ul {
+    margin-bottom: 1em;
+    li{
+      display: inline;
+      margin-right: 3em;
+    }
   }
 }
 .section-footer {
