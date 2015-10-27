@@ -223,6 +223,23 @@ figure.show {
   }
 }
 
+/// fade in
+
+.fade-in-element {
+  @include clearfix;
+  margin-bottom: 4em;
+  text-align: center;
+  width: 100%;
+}
+.js-fade-element-hide {
+  opacity: 0;
+}
+.js-fade-element-show {
+  @include transition (all 0.4s ease-in-out);
+  opacity: 1;
+}
+
+
 
 
 
