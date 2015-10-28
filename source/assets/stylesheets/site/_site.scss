@@ -31,8 +31,10 @@
 }
 }
 .section-footer {
-    @include media($medium-screen) {
-    font-family: "LifeLT-Roman",Helvetica,sans-serif;
+  @include media($medium-screen) {
+    h2 {
+      padding-bottom: 15px;
+    }
     line-height: 28px;
     text-align: center;
     @include outer-container;
@@ -180,7 +182,10 @@ figure.show {
   .card {
     background-color: #FFA89F;
     opacity: 0.8;
-
+    h1 {
+      padding: 15px 10px;;
+      text-align: center;
+    }
   }
   .card:hover {
     background-color: #727272;
