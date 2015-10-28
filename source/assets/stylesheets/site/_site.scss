@@ -201,7 +201,7 @@ figure.show {
   .group-quote {
     background-color: #FAEBD7;  
   }
-  @include media($medium-screen) {
+  @include media($large-screen) {
     .col-1 { 
       @include span-columns(4);
     }
