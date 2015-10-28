@@ -4,15 +4,9 @@
   <% end %>
 
   <div class="nav-links">
-  <% link_to '/' do %>
-     About
-  <% end %>
-  <% link_to '/' do %>
-     Our Menu
-  <% end %>
-  <% link_to '/' do %>
-     Contact
-  <% end %>
+    <%= link_to 'About', '/about.html', :relative => true %>
+    <%= link_to 'Our Menu', '/menu.html', :relative => true %>
+    <%= link_to 'Contact', '/contact.html', :relative => true %>
   </div>
   <div class="mobile-menu"><i class="fa fa-navicon"></i></div>
 </nav>
