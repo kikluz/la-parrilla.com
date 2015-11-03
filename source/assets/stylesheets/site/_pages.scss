@@ -1,13 +1,15 @@
 // menu page
 .section-about {
-	@include outer-container;
-	    background: url(../images/modal_menu_bg.jpg);
-	aside { 
-		@include span-columns(4);
-		img { height:100%;}
-	}
-	article {
-		@include span-columns(8);
+	img { height:100%;}
+	@include media($medium-screen) {
+		@include outer-container;
+		aside { 
+			@include span-columns(4);
+
+		}
+		article {
+			@include span-columns(8);
+		}
 	}
 }
 
