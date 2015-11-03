@@ -156,7 +156,7 @@ figure.show {
 // ------------------------------------------------------------
 .bgimage-pannel {
   @include media($large-screen) {
-    height: 400px;
+    display: flex;
   }
   background: url(../images/demo-parrilla.png);
 
