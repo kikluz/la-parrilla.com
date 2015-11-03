@@ -22,3 +22,43 @@
 		.article-last { @include span-columns(4); }
 	}
 }
+// contact page 
+.section-contact {
+	img { height:100%;}
+	@include media($medium-screen) {
+		@include outer-container;
+		aside { 
+			@include span-columns(6);
+
+		}
+		article {
+			@include span-columns(6);
+		}
+	}
+}
+
+#map_canvas {
+  height: 400px;
+  width: 100%;
+}
+
+#map_canvas img { 
+  max-width: none; // to prevent UI control bug
+}
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
+

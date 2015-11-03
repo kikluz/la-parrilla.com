@@ -4,14 +4,101 @@ title: La Parrilla | Contact
 
 <div class="container role">
 	<h1>Contact</h1>
-	<section class="section-about">
+	<section class="section-contact">
 		<aside>
-			<%= image_tag 'demo-parrilla.png' %>
-		</aside>
+			<div class="img__holder">
+				<img class="restaurant__image" src="http://www.phocafe.co.uk/wp-content/uploads/2014/06/location_leeds.jpg" alt="">                              	</div>
+				
+			</aside>
 		<article>
-		<p>
-		We are a family run business who pride ourselves in serving the finest, sustainable fresh locally sourced products. Having served the Middletown area for over 6 years we know that quality is of the utmost importance, that’s why we’ve carefully selected our suppliers so that we can provide you with good quality, fresh ingredients
-		</p>
+			<address>
+				<p>Contact Us</p>
+				<p>Address</p>
+				<span>Trinity Kitchen,</span>
+				<span> Leeds , LS1 5AY</span>
+				<p>Telephone</p>
+				<a><span>tel: </span>0113 834 5029</a>
+				<p>Opening Times</p>
+				<p>Monday to Thursday</p>
+				<span>11:30am - 9pm</span>
+				<p>Friday to Saturday</p>
+				<span>11:30am - 9:30pm</span>
+				<p>Sunday</p>
+				<span>11:30am - 6pm</span>
+			</address>
 		</article>
 	</section>
 </div>
+<!--
+Add the code below to the bottom of your page, just before the closing </body> tag.
+Edit myLatlng and the other variables.
+
+Find syntax for Features that can be styled here:
+
+https://developers.google.com/maps/documentation/javascript/reference#MapTypeStyleFeatureType
+
+Or use a service such as:
+
+http://software.stadtwerk.org/google_maps_colorizr/#
+http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+https://developers.google.com/maps/documentation/javascript/tutorial
+-->
+
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  var bittersMap = (function () {
+    var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
+        mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+        mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+          center: mapCenter,
+          zoom: 13,
+          scrollwheel: false,
+          draggable: true,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions),
+        contentString =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<div id="bodyContent"'+
+          '<p>Sveavägen 98</p>'+
+          '</div>'+
+          '</div>',
+        infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 300
+        }),
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'thoughtbot (Sweden)'
+        });
+
+    return {
+      init: function () {
+        map.set('styles', [{
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            { hue: '#ffff00' },
+            { saturation: 30 },
+            { lightness: 10}
+          ]}
+        ]);
+
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map,marker);
+        });
+      }
+    };
+  }());
+
+  bittersMap.init();
+</script>
+
+<div id="map_canvas"></div>
