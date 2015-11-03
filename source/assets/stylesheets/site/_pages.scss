@@ -28,37 +28,35 @@
 	@include media($medium-screen) {
 		@include outer-container;
 		aside { 
-			@include span-columns(6);
-
+			@include span-columns(5);
 		}
 		article {
-			@include span-columns(6);
+			@include span-columns(7);
 		}
 	}
 }
-
 #map_canvas {
-  height: 400px;
-  width: 100%;
+	height: 400px;
+	width: 100%;
+	img { 
+max-width: none; // to prevent UI control bug
+}
 }
 
-#map_canvas img { 
-  max-width: none; // to prevent UI control bug
-}
 
 #map_canvas .content {
-  padding: 0 0.5em 1em 0.5em;
+	padding: 0 0.5em 1em 0.5em;
 }
 
 #map_canvas .firstHeading {
-  font-size: 1em;
-  line-height: 1em;
-  font-weight: bold;
-  margin: 0;
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: bold;
+	margin: 0;
 }
 
 #map_canvas #bodyContent p {
-  font-size: 1em;
-  margin: 0;
+	font-size: 1em;
+	margin: 0;
 }
 
