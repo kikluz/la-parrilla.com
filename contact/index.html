@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>La Parrilla | Contact</title>
 
-    <link href="../assets/stylesheets/application-9ff4d68f.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-04612003.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -35,32 +35,36 @@
     <main class="site-main">
       <div class="container role">
 	<h1>Contact</h1>
+	<p>Located at the entrance to the amazing Trinity Kitchen street food court, we’re perfectly placed for a break from shopping, a quick feed on the way to the cinema or lunch away from your desk.
+
+Serving up grab and go style, everything from nutritious pho noodle soups, delicious curries and spicy salads, you can grab a seat and wash it down with a fresh juice, wine or cold Vietnamese beer. Don’t forget to check out our huge pot of bubbling pho stock while you’re there!</p>
 	<section class="section-contact">
 		<aside>
-			<div class="img__holder">
-				<img class="restaurant__image" src="http://www.phocafe.co.uk/wp-content/uploads/2014/06/location_leeds.jpg" alt="">                              	</div>
-				
-			</aside>
+			<div>
+				<img class="restaurant__image" src="http://www.phocafe.co.uk/wp-content/uploads/2014/06/location_leeds.jpg" alt="">
+			</div>	                              		
+		</aside>
 		<article>
-			<address>
-				<p>Contact Us</p>
-				<p>Address</p>
-				<span>Trinity Kitchen,</span>
-				<span> Leeds , LS1 5AY</span>
-				<p>Telephone</p>
-				<a><span>tel: </span>0113 834 5029</a>
-				<p>Opening Times</p>
-				<p>Monday to Thursday</p>
-				<span>11:30am - 9pm</span>
-				<p>Friday to Saturday</p>
-				<span>11:30am - 9:30pm</span>
-				<p>Sunday</p>
-				<span>11:30am - 6pm</span>
-			</address>
+			<div class="mapText">
+	                    <i class="fa fa-location-arrow fa-3x"></i>
+	                    <p>Joyride Central is located in the Medlock neighborhood in Phoenix just north of Colter Street on Central Avenue.</p>
+	                   <i class="fa fa-clock-o fa-3x"></i>
+	                    <p>Monday – Thursday: 11am–11pm<br>
+	                        Fridays: 11am–12am*<br>
+	                        Saturdays: 11am–12am*<br>
+	                        Sundays: 11am–10pm<br>
+	                    </p>
+	                    <p class="disclaimer">*Kitchen open until 11pm</p>
+	                    <i class="fa fa-user fa-3x"></i>
+	                    <p><a href="tel:0000000">602 274 8226</a><br>
+	                    <a href="mailto:joyridecentral@upwardprojects.com">joyridecentral@upwardprojects.com</a></p><p></p><a href="mailto:joyridecentral@upwardprojects.com">
+	                </a>
+	                </div>
 		</article>
 	</section>
-</div>
-<!--
+	<br />
+	<hr />
+	<!--
 Add the code below to the bottom of your page, just before the closing </body> tag.
 Edit myLatlng and the other variables.
 
@@ -75,6 +79,7 @@ http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
 https://developers.google.com/maps/documentation/javascript/tutorial
 -->
 
+<div id="map_canvas"></div> <!-- alway map div firts to make it work -->
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
@@ -132,7 +137,11 @@ https://developers.google.com/maps/documentation/javascript/tutorial
   bittersMap.init();
 </script>
 
-<div id="map_canvas"></div>
+
+
+
+</div>
+
 
     </main>
 
