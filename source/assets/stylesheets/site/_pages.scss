@@ -1,4 +1,4 @@
-// About page
+// menu page
 .section-about {
 	@include outer-container;
 	    background: url(../images/modal_menu_bg.jpg);
@@ -8,5 +8,15 @@
 	}
 	article {
 		@include span-columns(8);
+	}
+}
+
+// menu page
+.section-menu {
+	@include media($medium-screen) {
+		@include outer-container;
+		.article-description { @include span-columns(4); }
+		.aside-description { @include span-columns(4); }
+		.article-last { @include span-columns(4); }
 	}
 }
