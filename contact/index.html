@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>La Parrilla | Contact</title>
 
-    <link href="../assets/stylesheets/application-1c6d10ae.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-981df50f.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -35,38 +35,38 @@
     <main class="site-main">
       <div class="container role">
 
-	<h1>Contact</h1>
-	<p>
-		Located at the entrance to the amazing Trinity Kitchen street food court, we’re perfectly placed for a break from shopping, a quick feed on the way to the cinema or lunch away from your desk.
+  <h2>Contact</h2>
+  <p>
+    Located at the entrance to the amazing Trinity Kitchen street food court, we’re perfectly placed for a break from shopping, a quick feed on the way to the cinema or lunch away from your desk.
 
-		Serving up grab and go style, everything from nutritious pho noodle soups, delicious curries and spicy salads, you can grab a seat and wash it down with a fresh juice, wine or cold Vietnamese beer. Don’t forget to check out our huge pot of bubbling pho stock while you’re there!
-	</p>
-	<section class="section-contact">
-		<aside>
-			<div>
-				<img class="restaurant__image" src="http://www.phocafe.co.uk/wp-content/uploads/2014/06/location_leeds.jpg" alt="">
-			</div>	                              		
-		</aside>
-		<article>
-			<div class="mapText">
-	                    <i class="fa fa-location-arrow fa-3x"></i>
-						<p>
-						La Parilla  is located in 21389 Stewart St
-						Middletown, CA 95461
-						</p>
-	                   <i class="fa fa-clock-o fa-3x"></i>
-	                    <p>Wednesday - Sunday: 12am - 08pm<br>
-	                       Monday: 05pm - 08pm<br>
-	                    </p>
-	         
-	                    <i class="fa fa-user fa-3x"></i>
-	                    <p><a href="tel:7079874663">707.987.4663</a><br>
-	                </div>
-		</article>
-	</section>
-	<br />
-	<hr />
-	<!--
+    Serving up grab and go style, everything from nutritious pho noodle soups, delicious curries and spicy salads, you can grab a seat and wash it down with a fresh juice, wine or cold Vietnamese beer. Don’t forget to check out our huge pot of bubbling pho stock while you’re there!
+  </p>
+  <section class="section-contact">
+    <aside>
+      <div>
+        <img class="restaurant__image" src="http://www.phocafe.co.uk/wp-content/uploads/2014/06/location_leeds.jpg" alt="">
+      </div>	                              		
+    </aside>
+    <article>
+      <div class="mapText">
+        <i class="fa fa-location-arrow fa-3x"></i>
+        <p>
+          La Parilla  is located in 21389 Stewart St
+          Middletown, CA 95461
+        </p>
+        <i class="fa fa-clock-o fa-3x"></i>
+        <p>Wednesday - Sunday: 12am - 08pm<br>
+          Monday: 05pm - 08pm<br>
+        </p>
+
+        <i class="fa fa-user fa-3x"></i>
+        <p><a href="tel:7079874663">707.987.4663</a><br>
+        </div>
+      </article>
+    </section>
+    <br />
+    <hr />
+<!--
 Add the code below to the bottom of your page, just before the closing </body> tag.
 Edit myLatlng and the other variables.
 
@@ -87,35 +87,35 @@ https://developers.google.com/maps/documentation/javascript/tutorial
 <script>
   var bittersMap = (function () {
     var myLatlng = new google.maps.LatLng(38.747602, -122.619346),
-        mapCenter = new google.maps.LatLng(38.747602, -122.619346),
-        mapCanvas = document.getElementById('map_canvas'),
-        mapOptions = {
-          center: mapCenter,
-          zoom: 13,
-          scrollwheel: false,
-          draggable: true,
-          disableDefaultUI: true,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        },
-        map = new google.maps.Map(mapCanvas, mapOptions),
-        contentString =
-          '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">La Parrilla</h1>'+
-          '<div id="bodyContent"'+
-          '<p>21389 Stewart St Middletown, CA 95461</p>'+
-          '</div>'+
-          '</div>',
-        infowindow = new google.maps.InfoWindow({
-          content: contentString,
-          maxWidth: 300
-        }),
-        marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'La Parrilla (USA)'
-        });
+    mapCenter = new google.maps.LatLng(38.747602, -122.619346),
+    mapCanvas = document.getElementById('map_canvas'),
+    mapOptions = {
+      center: mapCenter,
+      zoom: 13,
+      scrollwheel: false,
+      draggable: true,
+      disableDefaultUI: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    map = new google.maps.Map(mapCanvas, mapOptions),
+    contentString =
+    '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h1 id="firstHeading" class="firstHeading">La Parrilla</h1>'+
+    '<div id="bodyContent"'+
+    '<p>21389 Stewart St Middletown, CA 95461</p>'+
+    '</div>'+
+    '</div>',
+    infowindow = new google.maps.InfoWindow({
+      content: contentString,
+      maxWidth: 300
+    }),
+    marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'La Parrilla (USA)'
+    });
 
     return {
       init: function () {
@@ -123,11 +123,11 @@ https://developers.google.com/maps/documentation/javascript/tutorial
           featureType: 'landscape',
           elementType: 'geometry',
           stylers: [
-            { hue: '#ffff00' },
-            { saturation: 30 },
-            { lightness: 10}
+          { hue: '#ffff00' },
+          { saturation: 30 },
+          { lightness: 10}
           ]}
-        ]);
+          ]);
 
         google.maps.event.addListener(marker, 'click', function () {
           infowindow.open(map,marker);
@@ -136,7 +136,7 @@ https://developers.google.com/maps/documentation/javascript/tutorial
     };
   }());
 
-  bittersMap.init();
+bittersMap.init();
 </script>
 
 
