@@ -41,7 +41,8 @@ body {
     h2 {
       padding-bottom: 15px;
     }
-    i {    color: #e74c3c;;}
+    a {    color: #e74c3c;}
+    a:hover {    color:#e60033;}
     line-height: 28px;
     text-align: center;
     @include outer-container;
