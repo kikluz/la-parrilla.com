@@ -24,6 +24,23 @@
 		.article-last { @include span-columns(4); }
 	}
 }
+.hero {
+	@include media($large-screen) {height: 400px;}
+	background: url(../images/demo-parrilla.png)no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	.container {
+		display: block;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+
 // contact page 
 .section-contact {
 	img { height:100%;}
