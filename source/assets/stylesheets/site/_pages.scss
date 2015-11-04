@@ -1,4 +1,4 @@
-// menu page
+// about page
 .section-about {
 	img { height:100%;}
 	@include media($medium-screen) {
@@ -15,7 +15,9 @@
 
 // menu page
 .section-menu {
-	h2 {color: #e60033;}
+	h2 {
+		color: #e60033;
+	}
 	strong {color: #f6ad49;}
 	@include media($large-screen) {
 		@include outer-container;
