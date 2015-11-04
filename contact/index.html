@@ -86,8 +86,8 @@ https://developers.google.com/maps/documentation/javascript/tutorial
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
   var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
-        mapCenter = new google.maps.LatLng(59.340458, 18.057340),
+    var myLatlng = new google.maps.LatLng(38.747602, -122.619346),
+        mapCenter = new google.maps.LatLng(38.747602, -122.619346),
         mapCanvas = document.getElementById('map_canvas'),
         mapOptions = {
           center: mapCenter,
@@ -102,9 +102,9 @@ https://developers.google.com/maps/documentation/javascript/tutorial
           '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<h1 id="firstHeading" class="firstHeading">La Parrilla</h1>'+
           '<div id="bodyContent"'+
-          '<p>Sveavägen 98</p>'+
+          '<p>21389 Stewart St Middletown, CA 95461</p>'+
           '</div>'+
           '</div>',
         infowindow = new google.maps.InfoWindow({
@@ -114,7 +114,7 @@ https://developers.google.com/maps/documentation/javascript/tutorial
         marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          title: 'thoughtbot (Sweden)'
+          title: 'La Parrilla (USA)'
         });
 
     return {
