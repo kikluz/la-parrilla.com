@@ -171,6 +171,7 @@ figure.show {
 }
 .three-col {
   @include outer-container;
+      padding: 2em 0 2em 0;
   ul li {
     -moz-box-shadow: 0 0.056rem 0.056rem 0 rgba(0,0,0,0.3);
     -webkit-box-shadow: 0 0.056rem 0.056rem 0 rgba(0,0,0,0.3);
