@@ -15,7 +15,7 @@
 
 // menu page
 .section-menu {
-	@include media($medium-screen) {
+	@include media($large-screen) {
 		@include outer-container;
 		.article-description { @include span-columns(4); }
 		.aside-description { @include span-columns(4); }
@@ -25,7 +25,7 @@
 // contact page 
 .section-contact {
 	img { height:100%;}
-	@include media($medium-screen) {
+	@include media($large-screen) {
 		@include outer-container;
 		aside { 
 			@include span-columns(5);
