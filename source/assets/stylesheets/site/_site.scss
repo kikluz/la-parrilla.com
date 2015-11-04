@@ -37,12 +37,12 @@ body {
 }
 }
 .section-footer {
-  @include media($medium-screen) {
-    h2 {
-      padding-bottom: 15px;
+   h2 {
+      padding-bottom: 20px;
     }
     a {    color: #e74c3c;}
     a:hover {    color:#e60033;}
+  @include media($medium-screen) {
     line-height: 28px;
     text-align: center;
     @include outer-container;
