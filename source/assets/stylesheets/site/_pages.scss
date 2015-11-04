@@ -1,4 +1,7 @@
+
+// ------------------------------------------------------------
 // about page
+// ------------------------------------------------------------
 .section-about {
 	img { height:100%;}
 	@include media($medium-screen) {
@@ -12,13 +15,35 @@
 		}
 	}
 }
+.about-founders {
+	h2 { color: white;}
+	p {
+		color: white;
+	}
+}
 
-// menu page
+// pannel 
+
+.bgimage-pannel-founder {
+  @include media($large-screen) {
+    display: flex;
+  }
+  background-color: #3B8F3F;
+  //background: url(../images/demo-parrilla.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+// ------------------------------------------------------------
+//  menu page 
+// ------------------------------------------------------------
+
 .section-menu {
 	h2 {
 		color: #e60033;
 	}
-	strong {color: #f6ad49;}
+	strong {color: #3B8F3F;}
 	@include media($large-screen) {
 		@include outer-container;
 		.article-description { @include span-columns(4); }
@@ -26,6 +51,7 @@
 		.article-last { @include span-columns(4); }
 	}
 }
+// menu hero unit 
 .hero {
 	h1 {
 		font-size: 2.2em;
