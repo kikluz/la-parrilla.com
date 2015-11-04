@@ -14,7 +14,8 @@
     line-height: 0;
 
     @include media($medium-screen) {
-      padding: 2em 0 2em 0;
+      padding: 0px;
+    padding-top: 1.6em;
     }
 
     i {
