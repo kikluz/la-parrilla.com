@@ -58,11 +58,11 @@
 // menu hero unit 
 .hero {
 	h1 {
-		font-size: 2.2em;
-	    color: #f6ad49;
+		font-size: 3em;
+	    color: #3B8F3F;
 	}
 	@include media($large-screen) {height: 400px;}
-	background: url(../images/laparilla.png)no-repeat center center;
+	background: url(../images/demobg.png)no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
