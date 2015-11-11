@@ -37,4 +37,10 @@ $('.prev').on('click', function(){
   });
 }*/
 
+// this for gallery demo
+
+$(".dishtitle").click(function() {
+  $(this).next().slideToggle();
+})
+
 

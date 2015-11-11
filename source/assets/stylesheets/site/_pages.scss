@@ -120,3 +120,166 @@ max-width: none; // to prevent UI control bug
 	margin: 0;
 }
 
+
+// demo gallery
+.banner {
+  background-image: url("https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/523778_10151380667786019_1468498094_n.jpg?oh=acd735e84055df2c38b408c47165b602&oe=5698083D");
+  background-size: cover;
+  height: 555px;
+}
+
+#apps {
+  background: rgba(101,51,153,0.8);
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(236,236,236);
+  padding: 20px;
+}
+
+.appetizers {
+  background: rgba(223,218,225,0.5);
+  height: 600px;
+}
+
+.appetizers .foodcard {
+  background-position: center;
+  background-size: 100%;
+	width: 400px;
+  font-weight: bolder;
+	color: rgb(85,107,47);
+  margin: 40px;
+  padding-top: 260px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.appetizers #foodcard1 {
+  float: left;
+  	background-image: url("https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12009842_1476201906019144_2472025374696634606_n.jpg?oh=06627d544f47e59fdf0038d310cb89b2&oe=5694F630");
+}
+
+.appetizers #foodcard2 {
+  float: right;
+  background-image: url("https://scontent.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/11224407_1476763199296348_9147631714038086756_n.jpg?oh=66db740b8b01b514d3b8afe8909057f7&oe=56C7A520")
+}
+
+#trees {
+  background: rgba(242,121,53,0.8);
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(236,236,236);
+  padding: 20px;
+}
+
+.entrees {
+  background: rgba(253,227,167,0.5);
+  height: 600px;
+}
+
+.entrees .foodcard {
+  background-position: center;
+  background-size: cover;
+	width: 400px;
+  font-weight: bolder;
+	color: rgb(34,49,63);
+  margin: 40px;
+  padding-top: 260px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.entrees #foodcard1 {
+  float: left;
+  	background-image: url("http://www.elysiancollection.com/wp-content/gallery/responsive-food-wine/gourmet-cuisine.jpg");
+}
+
+.entrees #foodcard2 {
+  float: right;
+  background-image: url("http://static1.squarespace.com/static/526c91eee4b0c72bb55e8018/t/526f6046e4b0cc2a0703a41f/1383030977158/food+image.jpg")
+}
+
+.entrees #image1 {
+  	background-image:       url("http://www.elysiancollection.com/wp-content/gallery/responsive-food-wine/gourmet-cuisine.jpg");
+}
+
+.entrees #image2 {
+  	background-image:         url("http://www.elysiancollection.com/wp-content/gallery/responsive-food-wine/gourmet-cuisine.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#zerts {
+  background: rgba(150,40,27,0.8);
+  font-family: 'Indie Flower', cursive;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(236,236,236);
+  padding: 20px;
+}
+
+.deserts {
+  background: rgba(241,160,169,0.5);
+  height: 600px;
+}
+
+.deserts .foodcard {
+  background-position: center;
+  background-size: cover;
+	width: 400px;
+  font-weight: bolder;
+	color: rgb(103,65,114);
+  margin: 40px;
+  padding-top: 260px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.deserts #foodcard1 {
+  float: left;
+  	background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwbRo-KMiTs_zIPK3rN0ADq41cpWAJzyqfBvcAzX6ClTnPBA4qIg");
+}
+
+.deserts #foodcard2 {
+  float: right;
+  background-image: url("http://demo.themovation.com/eatery/wp-content/uploads/2012/10/photodune-1586891-gourmet-dessert-s1.jpg")
+}
+
+.info {
+	margin: 0 auto;
+	padding: 10px 20px;
+  background: rgba(255,228,196,0.6)
+}
+
+.dishtitle {
+	font-size: 24px;
+	font-weight: 550;
+	padding: 10px 0;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+#signup {
+  background: rgb(244,170,90);
+  padding: 30px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.btn {
+  background: rgb(75,119,190);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0efef;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+
+
