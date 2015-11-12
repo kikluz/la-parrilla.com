@@ -126,36 +126,17 @@ max-width: none; // to prevent UI control bug
 
 
 
-.foodcard {
-  background-position: center;
-  background-size: 100%;
-	width: 400px;
-  font-weight: bolder;
-	color: rgb(85,107,47);
-  margin: 40px;
-  padding-top: 260px;
-  font-family: 'Indie Flower', cursive;
-}
-
-
 
 
 #trees {
-  background: rgba(242,121,53,0.8);
+  
   font-family: 'Indie Flower', cursive;
   font-size: 36px;
   font-weight: bolder;
   text-align: center;
-  color: rgb(236,236,236);
   padding: 20px;
 }
-
-.entrees {
-  background: rgba(253,227,167,0.5);
-  height: 600px;
-}
-
-.entrees .foodcard {
+.foodcard {
   background-position: center;
   background-size: cover;
 	width: 400px;
@@ -170,34 +151,12 @@ max-width: none; // to prevent UI control bug
   float: left;
   	background: url(../images/demo-parrilla.png);
 }
-
-.entrees #foodcard2 {
+.deserts #foodcard2 {
   float: right;
-  background-image: url("http://static1.squarespace.com/static/526c91eee4b0c72bb55e8018/t/526f6046e4b0cc2a0703a41f/1383030977158/food+image.jpg")
+  background-image: url(../images/demo-parrilla.png);
 }
-
-.entrees #image1 {
-  	background-image:       url("http://www.elysiancollection.com/wp-content/gallery/responsive-food-wine/gourmet-cuisine.jpg");
-}
-
-.entrees #image2 {
-  	background-image:         url("http://www.elysiancollection.com/wp-content/gallery/responsive-food-wine/gourmet-cuisine.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#zerts {
-  background: rgba(150,40,27,0.8);
-  font-family: 'Indie Flower', cursive;
-  font-size: 36px;
-  font-weight: bolder;
-  text-align: center;
-  color: rgb(236,236,236);
-  padding: 20px;
-}
-
 .deserts {
-  background: rgba(241,160,169,0.5);
+ 
   height: 600px;
 }
 
@@ -211,18 +170,6 @@ max-width: none; // to prevent UI control bug
   padding-top: 260px;
   font-family: 'Indie Flower', cursive;
 }
-
-.deserts #foodcard1 {
-  float: left;
-  	background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwbRo-KMiTs_zIPK3rN0ADq41cpWAJzyqfBvcAzX6ClTnPBA4qIg");
-}
-
-.deserts #foodcard2 {
-  float: right;
-  
-  background-image: url(../images/demo-parrilla.png);
-}
-
 .info {
 	margin: 0 auto;
 	padding: 10px 20px;
@@ -235,10 +182,7 @@ max-width: none; // to prevent UI control bug
 	padding: 10px 0;
 }
 
-p {
-	font-size: 16px;
-	font-weight: 100;
-}
+
 
 
 
