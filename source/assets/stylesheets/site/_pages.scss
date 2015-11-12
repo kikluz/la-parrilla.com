@@ -127,7 +127,6 @@ max-width: none; // to prevent UI control bug
 .fancy-btn {
   -webkit-appearance: none;
   cursor: pointer; outline: none; border: none;
-  
   display: block; min-width: 10%;
   line-height: 55px; font-size: 14px;
   margin: 0 auto; padding: 0 10px;
@@ -136,6 +135,16 @@ max-width: none; // to prevent UI control bug
   border-radius: 3px;
 
 }
+/*.modal-image img{
+	 -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	display: flex;
+}
+*/
 
 // completely redoing the modal from the ground up.
 .modal-overlay {
