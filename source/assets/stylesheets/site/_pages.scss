@@ -132,20 +132,18 @@ max-width: none; // to prevent UI control bug
 }
 }
 .sectionheader {
-  font-family: 'Indie Flower', cursive;
   font-size: 36px;
   font-weight: bolder;
   padding: 20px;
 }
 .foodcard {
-  background-position: center;
-  background-size: cover;
+	background-position: center;
+	background-size: cover;
 	width: 360px;
-  font-weight: bolder;
+	font-weight: bolder;
 	color: rgb(34,49,63);
-  margin: 40px;
-  padding-top: 260px;
-  
+	margin: 40px;
+	padding-top: 260px;  
 }
 .foodcard-left {
  // height: 600px;
@@ -153,9 +151,7 @@ max-width: none; // to prevent UI control bug
  #foodcard-image {
   background-image: url(../images/demo-parrilla.png);
 }
-
-
-.foodcard-left .foodcard {
+ .foodcard {
   background-position: center;
   background-size: cover;
 	//width: 400px;
@@ -163,12 +159,11 @@ max-width: none; // to prevent UI control bug
 	color: rgb(103,65,114);
   margin: 40px;
   padding-top: 260px;
-  font-family: 'Indie Flower', cursive;
 }
 .info {
 	margin: 0 auto;
 	padding: 10px 20px;
-  background: rgba(255,228,196,0.6)
+	background: rgba(255,228,196,0.6)
 }
 
 .dishtitle {
