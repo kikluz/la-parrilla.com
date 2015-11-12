@@ -123,47 +123,42 @@ max-width: none; // to prevent UI control bug
 
 // demo gallery
 
-
-
-
-
-
-#trees {
-  
+.section-gallery {
+	@include media($large-screen) {
+  @include outer-container;
+  .foodcard-left { @include span-columns(4); }
+  .foodcard-middle{ @include span-columns(4); }
+ .foodcard-right{ @include span-columns(4); }
+}
+}
+.sectionheader {
   font-family: 'Indie Flower', cursive;
   font-size: 36px;
   font-weight: bolder;
-  text-align: center;
   padding: 20px;
 }
 .foodcard {
   background-position: center;
   background-size: cover;
-	width: 400px;
+	width: 360px;
   font-weight: bolder;
 	color: rgb(34,49,63);
   margin: 40px;
   padding-top: 260px;
-  font-family: 'Indie Flower', cursive;
+  
 }
-
-.entrees #foodcard1 {
-  float: left;
-  	background: url(../images/demo-parrilla.png);
+.foodcard-left {
+ // height: 600px;
 }
-.deserts #foodcard2 {
-  float: right;
+ #foodcard-image {
   background-image: url(../images/demo-parrilla.png);
 }
-.deserts {
- 
-  height: 600px;
-}
 
-.deserts .foodcard {
+
+.foodcard-left .foodcard {
   background-position: center;
   background-size: cover;
-	width: 400px;
+	//width: 400px;
   font-weight: bolder;
 	color: rgb(103,65,114);
   margin: 40px;
