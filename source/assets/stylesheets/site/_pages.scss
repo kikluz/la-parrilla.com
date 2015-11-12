@@ -122,28 +122,11 @@ max-width: none; // to prevent UI control bug
 
 
 // demo gallery
-.banner {
-  background-image: url("https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/523778_10151380667786019_1468498094_n.jpg?oh=acd735e84055df2c38b408c47165b602&oe=5698083D");
-  background-size: cover;
-  height: 555px;
-}
 
-#apps {
-  background: rgba(101,51,153,0.8);
-  font-family: 'Indie Flower', cursive;
-  font-size: 36px;
-  font-weight: bolder;
-  text-align: center;
-  color: rgb(236,236,236);
-  padding: 20px;
-}
 
-.appetizers {
-  background: rgba(223,218,225,0.5);
-  height: 600px;
-}
 
-.appetizers .foodcard {
+
+.foodcard {
   background-position: center;
   background-size: 100%;
 	width: 400px;
@@ -154,15 +137,8 @@ max-width: none; // to prevent UI control bug
   font-family: 'Indie Flower', cursive;
 }
 
-.appetizers #foodcard1 {
-  float: left;
-  	background-image: url("https://scontent.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/12009842_1476201906019144_2472025374696634606_n.jpg?oh=06627d544f47e59fdf0038d310cb89b2&oe=5694F630");
-}
 
-.appetizers #foodcard2 {
-  float: right;
-  background-image: url("https://scontent.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/11224407_1476763199296348_9147631714038086756_n.jpg?oh=66db740b8b01b514d3b8afe8909057f7&oe=56C7A520")
-}
+
 
 #trees {
   background: rgba(242,121,53,0.8);
@@ -192,7 +168,7 @@ max-width: none; // to prevent UI control bug
 
 .entrees #foodcard1 {
   float: left;
-  	background-image: url("http://www.elysiancollection.com/wp-content/gallery/responsive-food-wine/gourmet-cuisine.jpg");
+  	background: url(../images/demo-parrilla.png);
 }
 
 .entrees #foodcard2 {
@@ -243,7 +219,8 @@ max-width: none; // to prevent UI control bug
 
 .deserts #foodcard2 {
   float: right;
-  background-image: url("http://demo.themovation.com/eatery/wp-content/uploads/2012/10/photodune-1586891-gourmet-dessert-s1.jpg")
+  
+  background-image: url(../images/demo-parrilla.png);
 }
 
 .info {
@@ -263,23 +240,6 @@ p {
 	font-weight: 100;
 }
 
-#signup {
-  background: rgb(244,170,90);
-  padding: 30px;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-}
-
-.btn {
-  background: rgb(75,119,190);
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #f0efef;
-  width: 200px;
-  padding: 10px;
-  margin: auto;
-}
 
 
 
