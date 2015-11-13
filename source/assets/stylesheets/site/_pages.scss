@@ -120,9 +120,11 @@ max-width: none; // to prevent UI control bug
 	margin: 0;
 }
 
-
-// demo gallery
+// ------------------------------------------------------------
+//  demo gallery
 // from http://codepen.io/koolhaus/pen/ajwcE
+// ------------------------------------------------------------
+// 
 
 .fancy-btn {
   -webkit-appearance: none;
@@ -323,3 +325,4 @@ max-width: none; // to prevent UI control bug
         @include transform(translateY(35px) scale(.97, .97));
     }
 }
+// demo multiple modals
