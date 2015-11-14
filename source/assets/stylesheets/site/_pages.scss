@@ -146,7 +146,7 @@ Notice our "Close" links have an href of "#", which means none of our modals are
 	right: 0;
 	display: none;
 	opacity: 0;
-	overflow: scroll;
+	//overflow: scroll;
 }
 .modal:target {
 	display: block;
@@ -172,7 +172,7 @@ Notice our "Close" links have an href of "#", which means none of our modals are
 	width: 1em;
 	height: 1em;
 	z-index: 10;
-	padding: 0.3em;
+	padding: 0.1em;
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
