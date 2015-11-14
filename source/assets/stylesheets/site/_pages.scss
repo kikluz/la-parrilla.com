@@ -185,20 +185,12 @@ Notice our "Close" links have an href of "#", which means none of our modals are
 .modal-open,
 .modal-open:hover {
 	display: block;
-	width: 10em;
-	margin: 1em auto;
-	padding: 2em 1em;
-	border: 1px solid #806973;
-	background-color: #FFF;
+	margin: 1em auto;	
 	font-size: 2em;
-	text-align: center;
 	text-decoration: none;
 	color: #806973;
-	box-shadow: 0 0 10px 1px #CCC;
 }
-.modal-open:hover {
-	box-shadow: 0 0 10px 1px #999;
-}
+
 
 .modal-title {
 	font-size: 3em;
