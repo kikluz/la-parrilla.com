@@ -55,4 +55,14 @@ $('.close-modal').click(function() {
 });
 
 
+$('button').click(function(e) {
+  $('.overlay, .modal').addClass('active');
+  e.preventDefault();
+});
+
+$('.modal img').click(function(e) {
+  $('.overlay, .modal').removeClass('active');
+  e.preventDefault();
+});
+
 
