@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Middleman is Loaded</title>
 
-    <link href="../assets/stylesheets/application-b3faa64e.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-3f732a17.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -34,41 +34,29 @@
 
     <main class="site-main">
       <div class="container">
-  <div id="modalA" class="modal-frame">
-    <div id="modalA" class="modal">
-      <div  id="modalA" class="modal-inset">
-        <div id="modalA" class="button close"><i class="fa fa-close"></i></div>
+  <a href="#openModal1">Box 1</a>
 
-        <div id="modalA" class="modal-body">
-          <img alt="" width="978" height="587" src="../assets/images/demobg-e0ce69c3.png" />
-          <h3 id="modalA">Such Modal, Much Animate!</h3>
-          <p id="modalA">Nothing groundbreaking, but I hope you enjoyed <br /> the physics for the open/close animation =).</p>
-          <p id="modalA" class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and w.e. I DO WHAT I WANT!!</p>
-        </div>
+  <div id="openModal1" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <div class="modal-image">
+        <img alt="" width="400" height="286" src="../assets/images/taco-c31542da.jpg" />
       </div>
+      <h2>Modal Box 1</h2>
+      <p>This is a sample modal box that can be created using the powers of CSS3.    </p>
+      <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
     </div>
   </div>
-  <div class="modal-overlay"></div>
+  <a href="#openModal2">Box 2</a>
 
-  <a href="#modalA" class="fancy-btn open">Gallery</a>
-  <!--<button class="fancy-btn open">Gallery</button>-->
-  <div id="modalb" class="modal-frame">
-    <div id="modalb" class="modal">
-      <div  id="modalb" class="modal-inset">
-        <div id="modalb" class="button close"><i class="fa fa-close"></i></div>
-
-        <div id="modalb" class="modal-body">
-          <img alt="" width="978" height="587" src="../assets/images/demobg-e0ce69c3.png" />
-          <h3 id="modalb">Such Modal, Much Animate!</h3>
-          <p id="modalb">Nothing groundbreaking, but I hope you enjoyed <br /> the physics for the open/close animation =).</p>
-        </div>
-      </div>
+  <div id="openModal2" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2>Modal Box 2</h2>
+      <p><strong>Box 2</strong></p>
+      <p>yadda yadda</p>
     </div>
   </div>
-  <div class="modal-overlay"></div>
-
-  <a href="#modalb" class="fancy-btn open">Gallery</a>
-</div>
 
     </main>
 
