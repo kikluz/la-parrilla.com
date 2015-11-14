@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Middleman is Loaded</title>
 
-    <link href="../assets/stylesheets/application-3f732a17.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-62bf0cd1.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -34,29 +34,30 @@
 
     <main class="site-main">
       <div class="container">
-  <a href="#openModal1">Box 1</a>
 
-  <div id="openModal1" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <div class="modal-image">
-        <img alt="" width="400" height="286" src="../assets/images/taco-c31542da.jpg" />
-      </div>
-      <h2>Modal Box 1</h2>
-      <p>This is a sample modal box that can be created using the powers of CSS3.    </p>
-      <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-    </div>
-  </div>
-  <a href="#openModal2">Box 2</a>
+  <section class="modal bg--purple" role="dialog" id="modalA" aria-labelledby="modalA-title" aria-describedby="modalA-description">
+    <a href="#" class="modal-exit" title="close">&times;</a>
+    <h1 id="modalA-title" class="modal-title">Modal A</h1>
+    <p id="modalA-description" class="modal-description">Lots of fun things in here to see.</p>
+  </section>
 
-  <div id="openModal2" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2>Modal Box 2</h2>
-      <p><strong>Box 2</strong></p>
-      <p>yadda yadda</p>
-    </div>
-  </div>
+  <section class="modal bg--blue" role="dialog" id="modalB" aria-labelledby="modalB-title" aria-describedby="modalB-description">
+    <a href="#" class="modal-exit" title="close">&times;</a>
+    <h1 id="modalB-title" class="modal-title">Modal B</h1>
+    <p id="modalB-description" class="modal-description">Lots of fun things in here to see.</p>
+  </section>
+
+
+
+
+  <a href="#modalA" class="modal-open">
+    View Modal A
+  </a>
+  <a href="#modalB" class="modal-open">
+    View Modal B
+  </a>
+
+</div>
 
     </main>
 
