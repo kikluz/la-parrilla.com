@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Middleman is Loaded</title>
 
-    <link href="../assets/stylesheets/application-4452d8a3.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-dbe35c57.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -35,33 +35,48 @@
     <main class="site-main">
       <div class="container">
 
-  <section class="modal bg--purple" role="dialog" id="modalA" aria-labelledby="modalA-title" aria-describedby="modalA-description">
-    <a href="#" class="modal-exit" title="close">&times;</a>
-    <h1 id="modalA-title" class="modal-title">Modal A</h1>
-    <p id="modalA-description" class="modal-description">Lots of fun things in here to see.</p>
-  </section>
-
-  <section class="modal bg--blue" role="dialog" id="modalB" aria-labelledby="modalB-title" aria-describedby="modalB-description">
-  <a href="#" class="modal-exit" title="close">x</a>
-
-    <div id="modalB-description" class="modal-description container">
-    <div class="modal-image">
-      <img alt="" width="400" height="286" src="../assets/images/taco-c31542da.jpg" />
-    </div>
-      <h1>Modal B</h1>
-      <p>Lots of fun things in here to see.</p>
-    </div>
-  </section>
+  <section class="v-center">
+<div>
+  <h2>Stupid Simple Popups</h2>
+  <p>Reuseable reveal popups via data-attributes, a touch of jquery, and a dash of css </p>
+  <br/>
+<a class="js-open-modal btn" href="#" data-modal-id="popup1"> Pop Up One</a>
+<a class="js-open-modal btn" href="#" data-modal-id="popup2"> Pop Up Two</a>
+</div>
+</section>
 
 
 
+<div id="popup1" class="modal-box">  
+  <header>
+    <a href="#" class="js-modal-close close">×</a>
+    <h3>Pop Up One</h3>
+  </header>
+  <div class="modal-body">
+    <p><strong>Sup Homeslice? I be PopUp1</strong> <br/>
+    I'm defined via a unique data attribute on the open link and associated modal div. In this case:
+    </p>
+    <pre>data-modal-id="popup1"</pre>
+  </div>
+  <footer>
+    <a href="#" class="btn btn-small js-modal-close">Peas Out</a>
+  </footer>
+</div>
 
-  <a href="#modalA" class="modal-open">
-    View Modal A
-  </a>
-  <a href="#modalB" class="modal-open">
-    View Modal B
-  </a>
+<div id="popup2" class="modal-box">  
+  <header>
+    <a href="#" class="js-modal-close close">×</a>
+    <h3>Pop Up Deuce Deuce</h3>
+  </header>
+  <div class="modal-body">
+    <p><strong>What's crackin Playa? I be PopUp2.</strong><br/>
+    I'm defined via a unique data attribute on the open link and assoicated modal div. In this case:</p>
+    <pre>data-modal-id="popup2"</pre>
+  </div>
+  <footer>
+    <a href="#" class="btn btn-small js-modal-close">Outtie</a>
+  </footer>
+</div>
 
 </div>
 
@@ -101,7 +116,7 @@
 
     </footer>
 
-    <script src="../assets/javascripts/application-0c0f6d01.js" type="text/javascript"></script>
+    <script src="../assets/javascripts/application-d3841d0a.js" type="text/javascript"></script>
     
   </body>
 </html>
