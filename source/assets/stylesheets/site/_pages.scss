@@ -177,6 +177,7 @@ max-width: none; // to prevent UI control bug
 }
 
 .popup {
+    z-index: 9999;
 	margin: 75px auto;
 	padding: 20px;
 	background: #fff;
