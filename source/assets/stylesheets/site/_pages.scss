@@ -124,26 +124,15 @@ max-width: none; // to prevent UI control bug
 //  demo gallery
 // from http://codepen.io/koolhaus/pen/ajwcE
 // ------------------------------------------------------------
-
-
-
-
 .button {
-	font-family: Helvetica, Arial, sans-serif;
 	font-size: 13px;
-	padding: 5px 10px;
-	border: 1px solid #aaa;
 	background-color: #eee;
-	background-image: linear-gradient(top, #fff, #f0f0f0);
-	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 	color: #666;
 	text-decoration: none;
 	text-shadow: 0 1px 0 #fff;
 	cursor: pointer;
 	transition: all 0.2s ease-out;
   &:hover {
-    border-color: #999;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
   }
   &:active {
@@ -180,20 +169,16 @@ max-width: none; // to prevent UI control bug
     z-index: 9999;
 	margin: 75px auto;
 	padding: 20px;
-	background: #fff;
+    background: #C5EBF3;
 	border: 1px solid #666;
-	width: 300px;
-	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	width: 350px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.2);
 	position: relative;
   .light & {
     border-color: #aaa;
     box-shadow: 0 2px 10px rgba(0,0,0,0.25);
   }
-  h2 {
-    margin-top: 0;
-    color: #666;
-    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-  }
+  
   .close {
     position: absolute;
     width: 20px;
