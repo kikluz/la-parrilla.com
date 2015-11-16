@@ -124,17 +124,15 @@ max-width: none; // to prevent UI control bug
 //  demo gallery
 // from http://codepen.io/anon/pen/BoMQzL
 // ------------------------------------------------------------
-.button {
-	background-color: #eee;
+.fancy-btn {
+	background-color: #f6ad49;
 	color: #666;
+	    padding: 6px;
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.2s ease-out;
   &:hover {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-  }
-  &:active {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
+    background-color: #e74c3c;
   }
 }
 .modal-image {
@@ -152,7 +150,7 @@ max-width: none; // to prevent UI control bug
 	left: 0;
 	right: 0;
 	background: rgba(204, 204, 204, 0.5);
-	transition: opacity 200ms;
+	transition: opacity 60ms;
 	visibility: hidden;
 	opacity: 0;
 
