@@ -139,6 +139,13 @@ max-width: none; // to prevent UI control bug
     box-shadow: 0 1px 3px rgba(0,0,0,0.25) inset;
   }
 }
+.modal-image {
+	img {
+		margin: 0;
+		width: 300px;
+		height: auto;
+	}	
+}
 
 .overlay {
 	position: absolute;
