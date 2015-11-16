@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Middleman is Loaded</title>
 
-    <link href="../assets/stylesheets/application-dbe35c57.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../assets/stylesheets/application-cb636922.css" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
 
@@ -35,47 +35,30 @@
     <main class="site-main">
       <div class="container">
 
-  <section class="v-center">
-<div>
-  <h2>Stupid Simple Popups</h2>
-  <p>Reuseable reveal popups via data-attributes, a touch of jquery, and a dash of css </p>
-  <br/>
-<a class="js-open-modal btn" href="#" data-modal-id="popup1"> Pop Up One</a>
-<a class="js-open-modal btn" href="#" data-modal-id="popup2"> Pop Up Two</a>
-</div>
-</section>
-
-
-
-<div id="popup1" class="modal-box">  
-  <header>
-    <a href="#" class="js-modal-close close">×</a>
-    <h3>Pop Up One</h3>
-  </header>
-  <div class="modal-body">
-    <p><strong>Sup Homeslice? I be PopUp1</strong> <br/>
-    I'm defined via a unique data attribute on the open link and associated modal div. In this case:
-    </p>
-    <pre>data-modal-id="popup1"</pre>
-  </div>
-  <footer>
-    <a href="#" class="btn btn-small js-modal-close">Peas Out</a>
-  </footer>
+  <h1>Popup Modal </h1>
+<div id="wrapper">
+  <p><a class="button" href="#popup1">Click Me</a></p>
+  <p><a class="button" href="#popup2">Click Me Too</a></p>
 </div>
 
-<div id="popup2" class="modal-box">  
-  <header>
-    <a href="#" class="js-modal-close close">×</a>
-    <h3>Pop Up Deuce Deuce</h3>
-  </header>
-  <div class="modal-body">
-    <p><strong>What's crackin Playa? I be PopUp2.</strong><br/>
-    I'm defined via a unique data attribute on the open link and assoicated modal div. In this case:</p>
-    <pre>data-modal-id="popup2"</pre>
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Info box</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <p>This is done totally without JavaScript. Just HTML and CSS.</p>
+    </div>
   </div>
-  <footer>
-    <a href="#" class="btn btn-small js-modal-close">Outtie</a>
-  </footer>
+</div>
+
+<div id="popup2" class="overlay light">
+  <a class="cancel" href="#"></a>
+  <div class="popup">
+    <h2>What the what?</h2>
+    <div class="content">
+      <p>Click outside the popup to close.</p>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -116,7 +99,7 @@
 
     </footer>
 
-    <script src="../assets/javascripts/application-d3841d0a.js" type="text/javascript"></script>
+    <script src="../assets/javascripts/application-0c0f6d01.js" type="text/javascript"></script>
     
   </body>
 </html>
