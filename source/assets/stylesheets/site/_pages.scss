@@ -122,14 +122,12 @@ max-width: none; // to prevent UI control bug
 
 // ------------------------------------------------------------
 //  demo gallery
-// from http://codepen.io/koolhaus/pen/ajwcE
+// from http://codepen.io/anon/pen/BoMQzL
 // ------------------------------------------------------------
 .button {
-	font-size: 13px;
 	background-color: #eee;
 	color: #666;
 	text-decoration: none;
-	text-shadow: 0 1px 0 #fff;
 	cursor: pointer;
 	transition: all 0.2s ease-out;
   &:hover {

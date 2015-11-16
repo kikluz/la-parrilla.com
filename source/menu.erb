@@ -11,34 +11,30 @@ title: La Parrilla | Menu
 	<section class="section-menu">
 		<article class="article-description">
 
-			<h2>Appetizers</h2>
-
-			<div class="modal-frame">
-				<div class="modal">
-					<div class="modal-inset">
-						<div class="button close"><i class="fa fa-times"></i></div>
-						<div class="modal-body">
-							<div class="modal-image">
-								<%= image_tag 'taco.jpg' %>
-							</div>
-							<h3>Taquitos Dorados &nbsp; $5.50</h3>
-							<p>
-								<em>
-									Three deep fried taquitos filled with chicken; topped with lettuce, sour cream, queso fresco & salsa.
-								</em>
-							</p>
-							<p class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and w.e. I DO WHAT I WANT!!</p>
+			<h2>Appetizers</h2>	
+			<div id="popup1" class="overlay">
+				<div class="popup"> 
+					<h3>Taquitos Dorados 1 &nbsp; $5.50</h3>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<div class="modal-image">
+							<%= image_tag 'bg-dish.png' %>
 						</div>
+						<p>
+							<em>
+								Three deep fried taquitos filled with chicken; topped with lettuce, sour cream, queso fresco & salsa.
+							</em>
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="modal-overlay"></div>
 
 			<p>
-				<strong class="fancy-btn open">
-					Taquitos Dorados &nbsp; $5.50
-				</strong>
-				<br>
+				<a class="button" href="#popup1">
+					<strong class="fancy-btn open">
+						Taquitos Dorados &nbsp; $5.50
+					</strong>
+				</a><br />
 				<em>
 					Three deep fried taquitos filled with chicken; topped with lettuce, sour cream, queso fresco & salsa.
 				</em>
