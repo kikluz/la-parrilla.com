@@ -186,16 +186,33 @@ title: La Parrilla | Menu
 			</div>
 			<!-- end of modal -->
 			<h2>Queso Carne</h2>
-			<p>
-				<strong>
-					Queso Carne &nbsp; $13.50
-				</strong>
-				<br>
+			<div id="popup8" class="overlay">
+				<div class="popup"> 
+					<h3>Queso Carne &nbsp; $13.50 </h3>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<div class="modal-image">
+							<%= image_tag 'bg-dish.png' %>
+						</div>
+						<p>
+							<em>
+								Your Choice of meat mixed with melted Monterey jack cheese, served with salsa, corn tortillas, rice & house black beans.
+								Meat selections:&nbsp;Pollo Adobado, Carne Asada, or Al Pastor
+							</em>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<a class="fancy-btn" href="#popup8">
+					<strong>Queso Carne &nbsp; $13.50</strong>
+				</a><br />
 				<em>
 					Your Choice of meat mixed with melted Monterey jack cheese, served with salsa, corn tortillas, rice & house black beans.
-					Meat selections:Pollo Adobado, Carne Asada, or Al Pastor
+					Meat selections:&nbsp;Pollo Adobado, Carne Asada, or Al Pastor
 				</em>
-			</p>
+			</div>
+			<!-- end of modal -->
 		</article>
 
 		<aside class="aside-description">
