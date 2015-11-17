@@ -127,9 +127,8 @@ max-width: none; // to prevent UI control bug
 .fancy-btn {
   -webkit-appearance: none;
   cursor: pointer; outline: none; border: none;
- 
   line-height: 33px;
-  text-transform: uppercase;
+
   padding: 5px 5px;
   background-color: #FAD600;
   color: #FFF;
@@ -139,19 +138,9 @@ max-width: none; // to prevent UI control bug
     background-color: lighten(#F2594B, 5%);
   }
 }
-/*
-.fancy-btn {
-	background-color: #f6ad49;
-	color: #666;
-	    padding: 6px;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.2s ease-out;
-  &:hover {
-    background-color: #e74c3c;
-  }
+.item-info {
+	margin-bottom: 10px;
 }
-*/
 .modal-image {
 	img {
 		margin: 0;
@@ -210,11 +199,5 @@ max-width: none; // to prevent UI control bug
   .content {
     max-height: 400px;
     overflow: auto;
-  }
-  p {
-    margin: 0 0 1em;
-    &:last-child {
-      margin: 0;
-    }
-  }
+  } 
 }

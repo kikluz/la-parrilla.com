@@ -29,7 +29,7 @@ title: La Parrilla | Menu
 				</div>
 			</div>
 
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup1">
 					<strong>
 						Taquitos Dorados &nbsp; $5.50
@@ -56,7 +56,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup2">
 					<strong>Sopesitos &nbsp; $5.50</strong>
 				</a><br />
@@ -81,7 +81,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup3">
 					<strong>Tostaditas &nbsp; $6.50</strong>
 				</a><br />
@@ -104,7 +104,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup4">
 					<strong>Nachos &nbsp; $6.75 </strong>
 				</a><br />
@@ -127,7 +127,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup5">
 					<strong>Coctel de Camaron (Appetizer) &nbsp; $8.00</strong>
 				</a><br />
@@ -150,7 +150,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup6">
 					<strong>Chips and Salsa &nbsp; $1.00</strong>
 				</a><br />
@@ -178,7 +178,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup7">
 					<strong>Quesadilla &nbsp;$9.50 </strong>
 				</a><br />
@@ -203,7 +203,7 @@ title: La Parrilla | Menu
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="item-info">
 				<a class="fancy-btn" href="#popup8">
 					<strong>Queso Carne &nbsp; $13.50</strong>
 				</a><br />
@@ -218,15 +218,34 @@ title: La Parrilla | Menu
 		<aside class="aside-description">
 			
 			<h2>Chicken</h2>
-			<p><em>Specialties</em></p>
-			<p>Served with housemade refried black beans and rice.</p>
-			<p>
-				<strong>Mole Poblano Enchiladas &nbsp; $13.50</strong>
-				<br>
+			<p><em>Specialties</em>
+			Served with housemade refried black beans and rice.</p>
+			<div id="popup9" class="overlay">
+				<div class="popup"> 
+					<h3>Mole Poblano Enchiladas &nbsp; $13.50</h3>
+					<a class="close" href="#">&times;</a>
+					<div class="content">
+						<div class="modal-image">
+							<%= image_tag 'bg-dish.png' %>
+						</div>
+						<p>
+							<em>
+								These enchiladas are topped with mole sauce (a hot chili and rich chocolate sauce), chicken, sour cream, queso fresco, onion and sesame seeds.
+							</em>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="item-info">
+				<a class="fancy-btn" href="#popup9">
+					<strong>Mole Poblano Enchiladas &nbsp; $13.50</strong>
+				</a><br />
 				<em>
 					These enchiladas are topped with mole sauce (a hot chili and rich chocolate sauce), chicken, sour cream, queso fresco, onion and sesame seeds.
 				</em>
-			</p>
+			</div>
+			<!-- end of modal -->
+
 
 			<p>
 				<strong>Michoacanas Enchiladas &nbsp; $13.50</strong><br />
