@@ -128,7 +128,6 @@ max-width: none; // to prevent UI control bug
   -webkit-appearance: none;
   cursor: pointer; outline: none; border: none;
   line-height: 33px;
-
   padding: 5px 5px;
   background-color: #FAD600;
   color: #FFF;
@@ -199,5 +198,12 @@ max-width: none; // to prevent UI control bug
   .content {
     max-height: 400px;
     overflow: auto;
-  } 
+  }
+  p {
+    color: #5e5e5e;
+    margin: 0 0 1em;
+    &:last-child {
+      margin: 0;
+    }
+  }
 }
