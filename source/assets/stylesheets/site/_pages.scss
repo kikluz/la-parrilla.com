@@ -4,6 +4,7 @@
 // ------------------------------------------------------------
 .section-about {
 	img { height:100%;}
+	h2 {color: #3B8F3F;}
 	@include media($medium-screen) {
 		@include outer-container;
 		aside { 
@@ -12,14 +13,21 @@
 		}
 		article {
 			@include span-columns(8);
+			p {
+				font-size: 24px;
+				line-height: 31px;
+				font-weight: normal;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 }
 .about-founders {
 	padding: 10px 0 10px 0;
 	@include media($medium-screen) {
-	padding: 70px;
-}
+		padding: 70px;
+	}
 	h2 { color: white;}
 	p {
 		color: white;
@@ -29,28 +37,28 @@
 // pannel 
 
 .bgimage-pannel-founder {
-  @include media($large-screen) {
-    display: flex;
-  }
-  background-color: #3B8F3F;
-  //background: url(../images/bgparrilla.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	@include media($large-screen) {
+		display: flex;
+	}
+	background-color: #3B8F3F;
+//background: url(../images/bgparrilla.png);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 // ------------------------------------------------------------
 //  menu page 
 // ------------------------------------------------------------
 .wrapper-menu {
 
-		margin-top: 30px;
+	margin-top: 30px;
 }
 .section-menu {
 	@include media($large-screen) {
-	border: 4px double #d3d3d3;
-	padding: 25px 5px 15px 15px;
-}
+		border: 4px double #d3d3d3;
+		padding: 25px 5px 15px 15px;
+	}
 	h2 {
 		color: #e60033;
 	}
@@ -66,7 +74,7 @@
 .hero {
 	h1 {
 		font-size: 3em;
-	    color: #3B8F3F;
+		color: #3B8F3F;
 	}
 	@include media($large-screen) {height: 400px;}
 	background: url(../images/demobg.png)no-repeat center center;
@@ -132,17 +140,17 @@ max-width: none; // to prevent UI control bug
 // from http://codepen.io/anon/pen/BoMQzL
 // ------------------------------------------------------------
 .fancy-btn {
-  -webkit-appearance: none;
-  cursor: pointer; outline: none; border: none;
-  line-height: 33px;
-  padding: 5px 5px;
-  background-color: #FAD600;
-  
-  border-radius: 3px;
-  @include transform(translateY(-50%));
-  &:hover {
-    background-color: lighten(#F2594B, 5%);
-  }
+	-webkit-appearance: none;
+	cursor: pointer; outline: none; border: none;
+	line-height: 33px;
+	padding: 5px 5px;
+	background-color: #FAD600;
+
+	border-radius: 3px;
+	@include transform(translateY(-50%));
+	&:hover {
+		background-color: lighten(#F2594B, 5%);
+	}
 }
 .item-info {
 	margin-bottom: 10px;
@@ -156,63 +164,63 @@ max-width: none; // to prevent UI control bug
 		height: auto;
 	}	
 }
-  
-   
+
+
 .overlay {
-	 position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    margin: auto;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	margin: auto;
 	background: rgba(204, 204, 204, 0.5);
 	transition: opacity 60ms;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 40;
 
-  .cancel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: default;
-  }
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
+	.cancel {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		cursor: default;
+	}
+	&:target {
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 .popup {
-    z-index: 9999;
+	z-index: 9999;
 	margin: 75px auto;
 	padding: 20px;
-    background: #C5EBF3;
+	background: #C5EBF3;
 	width: 300px;
 	position: relative;
-  
-  .close {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    right: 20px;
-    opacity: 0.8;
-    transition: all 200ms;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #666;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  .content {
-    max-height: 400px;
-    overflow: auto;
-  }
-  p {
-    color: #5e5e5e;
-    margin: 0 0 1em;
-    &:last-child {
-      margin: 0;
-    }
-  }
+
+	.close {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 20px;
+		right: 20px;
+		opacity: 0.8;
+		transition: all 200ms;
+		font-size: 24px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #666;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.content {
+		max-height: 400px;
+		overflow: auto;
+	}
+	p {
+		color: #5e5e5e;
+		margin: 0 0 1em;
+		&:last-child {
+			margin: 0;
+		}
+	}
 }
