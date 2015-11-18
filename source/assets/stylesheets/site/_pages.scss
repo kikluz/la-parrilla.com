@@ -169,12 +169,11 @@ max-width: none; // to prevent UI control bug
 	cursor: pointer; outline: none; border: none;
 	line-height: 33px;
 	padding: 5px 5px;
-	background-color: #FAD600;
-
+	background-color: rgba(152, 255, 74, 0.21);
 	border-radius: 3px;
 	@include transform(translateY(-50%));
 	&:hover {
-		background-color: lighten(#F2594B, 5%);
+		background-color: lighten(#FE9925, 5%);
 	}
 }
 .item-info {
