@@ -200,11 +200,10 @@ figure.show {
     }
   }
   .card:hover {
-    background-color: lighten(#F2594B, 5%);
+    background-color: lighten(#fe6a24, 6%);
     opacity: 1;
     -webkit-transition: opacity .6s ease;
     transition: opacity .6s ease;
-    
   }
   .group-quote {
     background-color: #FAEBD7;  
