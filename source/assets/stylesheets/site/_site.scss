@@ -13,7 +13,7 @@ body {
 .site-header {
   position: relative;
   @include clearfix;
-  background: rgba(255,60,0,0.95);
+  background: #fa841a;
 }
 
 .site-main {}
@@ -39,10 +39,10 @@ body {
 .section-footer {
    h2 {
       padding-bottom: 20px;
-      color:#f6ad49;
+      color:#fa841a;
       font-family: "schoolbook-web",serif;
     }
-    a {    color: #e74c3c;}
+    a {    color: #fa841a;}
     a:hover {    color:#e60033;}
   @include media($medium-screen) {
     line-height: 28px;
