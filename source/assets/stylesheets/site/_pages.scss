@@ -91,7 +91,6 @@
 			@include span-columns(7);
 		}
 	}
-	em {color: #5e5e5e;}
 }
 #map_canvas {
 	@include media($large-screen) {
@@ -131,7 +130,7 @@ max-width: none; // to prevent UI control bug
   line-height: 33px;
   padding: 5px 5px;
   background-color: #FAD600;
-  color: #FFF;
+  
   border-radius: 3px;
   @include transform(translateY(-50%));
   &:hover {
@@ -140,6 +139,8 @@ max-width: none; // to prevent UI control bug
 }
 .item-info {
 	margin-bottom: 10px;
+	em {color: #5e5e5e;}
+
 }
 .modal-image {
 	img {
