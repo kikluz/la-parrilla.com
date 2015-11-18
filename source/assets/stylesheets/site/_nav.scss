@@ -42,7 +42,7 @@
         float: left;
         line-height: 0;
         font-weight: bold;
-        color: $white-smoke;
+        color: #ffdaae;
 
         // I removed the top and bottom padding of the header
         // and fattened up the touch targets on these links.
@@ -50,7 +50,7 @@
         padding: 1.5em;
 
         &:hover {
-          background: #fd641e;
+          background: #ffc078;
           color: #fff;
         }
       }
@@ -82,7 +82,7 @@
     font-size: 2em;
     line-height: 0;
     display: block;
-    color: #f6ad49;
+    color: $white-smoke;
   }
 
   .icon {
@@ -102,7 +102,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(239,232,213,.95);
+    background: rgba(241, 241, 241, 0.95);
     box-shadow: 0 10px 10px rgba(0,43,54,.4);
 
     a {

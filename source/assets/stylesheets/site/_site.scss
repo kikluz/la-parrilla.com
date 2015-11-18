@@ -13,7 +13,7 @@ body {
 .site-header {
   position: relative;
   @include clearfix;
-  background: #fa841a;
+  background: #fe9925;
 }
 
 .site-main {}
@@ -62,7 +62,7 @@ h4, h5, h6 {
 }
 p { 
   font-family: "proxima_novalight","brandon-grotesque",sans-serif;
-  color: #5e5e5e;
+  color: #7f7f7f;
 }
 
 // ------------------------------------------------------------
@@ -191,11 +191,12 @@ figure.show {
     padding: 2em;
   }
   .card {
-    background-color: #FFA89F;
+    background-color: #70e16a;
     opacity: 0.8;
     h1 {
       padding: 15px 10px;;
       text-align: center;
+      color: #218c06;
     }
   }
   .card:hover {
