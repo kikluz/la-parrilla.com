@@ -95,6 +95,17 @@ background-size: cover;
 }
 
 // contact page 
+.info-contact {
+	@include media($large-screen) {
+		p {
+		font-size: 24px;
+		line-height: 31px;
+		font-weight: normal;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	}
+}
 .section-contact {
 	img { height:100%;}
 	@include media($large-screen) {
@@ -104,6 +115,13 @@ background-size: cover;
 		}
 		article {
 			@include span-columns(7);
+			p {
+		font-size: 24px;
+		line-height: 31px;
+		font-weight: normal;
+		margin-left: auto;
+		margin-right: auto;
+	}
 		}
 	}
 }
