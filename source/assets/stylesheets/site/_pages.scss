@@ -43,11 +43,14 @@
 //  menu page 
 // ------------------------------------------------------------
 .wrapper-menu {
-	margin-top: 30px;
+
+		margin-top: 30px;
 }
 .section-menu {
+	@include media($large-screen) {
 	border: 4px double #d3d3d3;
 	padding: 25px 5px 15px 15px;
+}
 	h2 {
 		color: #e60033;
 	}
