@@ -17,13 +17,6 @@
       padding: 0px;
     padding-top: 1.6em;
     }
-
-    i {
-      font-size: 3em;
-      line-height: 0;
-      display: block;
-      color: #002B36;
-    }
   }
 
   .site-logo {
@@ -49,7 +42,7 @@
         float: left;
         line-height: 0;
         font-weight: bold;
-        color: #FFA89F;
+        color: $white-smoke;
 
         // I removed the top and bottom padding of the header
         // and fattened up the touch targets on these links.
@@ -58,7 +51,7 @@
 
         &:hover {
           background: #e96c60;
-          color: #EFE8D5;
+          color: #fff;
         }
       }
     }

@@ -13,7 +13,7 @@ body {
 .site-header {
   position: relative;
   @include clearfix;
-  background-color: #e74c3c;
+  background: rgba(255,60,0,0.95);
 }
 
 .site-main {}
