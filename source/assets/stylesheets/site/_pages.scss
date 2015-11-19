@@ -114,6 +114,12 @@ background-size: cover;
 	}
 }
 .section-contact {
+	.mapText {
+	i {color: #BBB7B7;}
+}
+a {
+	color: #fa841a;
+}
 	img { height:100%;}
 	@include media($large-screen) {
 		@include outer-container;
