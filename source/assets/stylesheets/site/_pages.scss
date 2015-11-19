@@ -216,7 +216,7 @@ max-width: none; // to prevent UI control bug
 	z-index: 9999;
 	margin: 75px auto;
 	padding: 20px;
-	background: #C5EBF3;
+    background: rgb(176, 255, 157);
 	width: 300px;
 	position: relative;
 
@@ -240,6 +240,7 @@ max-width: none; // to prevent UI control bug
 		max-height: 400px;
 		overflow: auto;
 	}
+	h3 {font-family: Matrix-SmallCaps,serif;}
 	p {
 		color: #5e5e5e;
 		margin: 0 0 1em;
