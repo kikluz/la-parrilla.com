@@ -12,10 +12,15 @@
     padding: 2em 0;
     float: left;
     line-height: 0;
-
+    font-family: Matrix-SmallCaps,serif;
+    font-weight: 500;
+    color: #019800;
+    padding-top: 0.8em;
+    padding-top: 1.6em;
     @include media($medium-screen) {
       padding: 0px;
-    padding-top: 1.6em;
+      padding-top: 0.8em;
+      font-size: 29px;
     }
   }
 
