@@ -36,3 +36,26 @@ $('.prev').on('click', function(){
     }
   });
 }*/
+
+
+
+
+
+$(document).on('ready', inicio);
+  // Funciones claves, apertura y cierre de vista previa
+  function inicio(){
+    $('.gallery img').on('click', abrirFull);
+    $('#previa').on('click', cerrarFull);
+  }
+  //
+  function abrirFull(){
+    var nombre = $(this).attr('alt'),
+        direccion = "https://s-media-cache-ak0.pinimg.com/" + nombre + ".jpg";
+    
+    $('#imgFull img').attr('src', direccion);
+    $('#previa').fadeIn();
+  }
+
+function cerrarFull(){
+  $('#previa').fadeOut();
+}

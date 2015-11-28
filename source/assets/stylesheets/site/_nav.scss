@@ -101,6 +101,7 @@
 .menu-active {
 
   .nav-links {
+    z-index: 999;
     height: auto;
     overflow: auto;
     position: absolute;
