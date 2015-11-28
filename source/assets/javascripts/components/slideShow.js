@@ -36,8 +36,3 @@ $('.prev').on('click', function(){
     }
   });
 }*/
-
-
-
-
-
