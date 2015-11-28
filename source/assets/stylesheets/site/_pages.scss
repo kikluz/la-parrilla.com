@@ -255,6 +255,10 @@ max-width: none; // to prevent UI control bug
 		}
 	}
 }
+// ------------------------------------------------------------
+//  demo gallery
+// from http://codepen.io/HarleySG/pen/XJybBp
+// ------------------------------------------------------------
 
 h1 {
   text-align: center;
@@ -305,7 +309,7 @@ h1 {
   width: 400px;
   height: auto;
   margin: 6em auto;
-  background: #000;
+ 
 }
 
 @media (min-width: 0px) and (max-width: 249px){
