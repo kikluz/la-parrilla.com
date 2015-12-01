@@ -39,21 +39,21 @@ $('.prev').on('click', function(){
 
 
 //demo for gallery page
-$(document).on('ready', inicio);
-// Funciones claves, apertura y cierre de vista previa
-function inicio(){
-  $('.gallery img').on('click', abrirFull);
-  $('#previa').on('click', cerrarFull);
-}
-//
-function abrirFull(){
-  var nombre = $(this).attr('alt'),
-  direccion = "https://s-media-cache-ak0.pinimg.com/" + nombre + ".jpg";
 
-  $('#imgFull img').attr('src', direccion);
-  $('#previa').fadeIn();
-}
+ // portfolio
+ $('.gallery ul li a').click(function() {
+     var itemID = $(this).attr('href');
+     $('.gallery ul').addClass('item_open');
+     $(itemID).addClass('item_open');
+     return false;
+ });
+ $('.close').click(function() {
+     $('.port, .gallery ul').removeClass('item_open');
+     return false;
+ });
 
-function cerrarFull(){
-  $('#previa').fadeOut();
-}
+ $(".gallery ul li a").click(function() {
+     $('html, body').animate({
+         scrollTop: parseInt($("#top").offset().top)
+     }, 400);
+ });
