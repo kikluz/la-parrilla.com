@@ -285,13 +285,11 @@ max-width: none; // to prevent UI control bug
   position: relative;
   //overflow: hidden;
 }
-.gallery ul {
+.gallery .demo-gallery {
   padding-top: 50px;
   position: relative;
 }
-.gallery ul li {
-  margin-bottom: 20px;
-  width: 23.24561%;
+.gallery .demo-gallery div {
   position: relative;
 }
 .gallery ul li a {
