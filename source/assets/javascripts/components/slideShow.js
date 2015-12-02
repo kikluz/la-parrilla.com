@@ -36,24 +36,27 @@ $('.prev').on('click', function(){
     }
   });
 }*/
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
 
+//An image to overlay
+$overlay.append($image);
 
-//demo for gallery page
+//Add overlay
+$("body").append($overlay);
 
- // portfolio
- $('.gallery .demo-gallery div a').click(function() {
-     var itemID = $(this).attr('href');
-     $('.gallery .demo-gallery').addClass('item_open');
-     $(itemID).addClass('item_open');
-     return false;
- });
- $('.close').click(function() {
-     $('.port, .gallery .demo-gallery').removeClass('item_open');
-     return false;
- });
+  //click the image and a scaled version of the full size image will appear
+  $("#photo-gallery a").click( function(event) {
+    event.preventDefault();
+    var imageLocation = $(this).attr("href");
 
- $(".gallery .demo-gallery div").click(function() {
-     $('html, body').animate({
-         scrollTop: parseInt($("#top").offset().top)
-     }, 400);
- });
+    //update overlay with the image linked in the link
+    $image.attr("src", imageLocation);
+
+    //show the overlay
+    $overlay.show();
+  } );
+
+  $("#overlay").click(function() {
+    $( "#overlay" ).hide();
+  });
