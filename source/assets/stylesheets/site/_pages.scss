@@ -260,12 +260,11 @@ max-width: none; // to prevent UI control bug
 // from http://codepen.io/mglissmann/pen/zxXvpq
 // ------------------------------------------------------------
 .wrap-gallery {
-
-		@include outer-container;
-		section { @include span-columns(4); }
-		section { @include span-columns(4); }
-		section { @include span-columns(4); }
+	@include outer-container;
+	section { @include span-columns(4); }
+	section { @include span-columns(4); }
+	section { @include span-columns(4); }
 }
 .popup-gallery {
-    background: rgba(160, 160, 160, 0.68);
+	background: rgba(160, 160, 160, 0.68);
 }
