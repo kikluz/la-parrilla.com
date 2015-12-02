@@ -280,20 +280,23 @@ ul {
 }
 
 #overlay {
-	    z-index: 999;
-  background: rgba(0,0,0, .8);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  text-align: center;
+	z-index: 999;
+	background: rgba(0,0,0, .8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
 }
 
 #overlay img {
   margin: 10% auto 0;
-  width: 250px;
+  width: 200px;
+  @include media($large-screen) {
+  	width: 300px;
+  }
   border-radius: 5px;
 }
 
