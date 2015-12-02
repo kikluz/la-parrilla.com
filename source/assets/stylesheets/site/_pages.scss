@@ -265,5 +265,7 @@ max-width: none; // to prevent UI control bug
 		section { @include span-columns(4); }
 		section { @include span-columns(4); }
 		section { @include span-columns(4); }
-	
+}
+.popup-gallery {
+    background: rgba(160, 160, 160, 0.68);
 }
