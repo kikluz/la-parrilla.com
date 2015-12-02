@@ -257,53 +257,13 @@ max-width: none; // to prevent UI control bug
 }
 // ------------------------------------------------------------
 //  demo gallery
-// from http://codepen.io/anon/pen/gaVQyp
+// from http://codepen.io/mglissmann/pen/zxXvpq
 // ------------------------------------------------------------
-#photos {
-  opacity: .88;
-}
-
-#photos img {
-  width: 30%;
-  float: left;
-  display: block;
-  margin: 2px;
-}
-
-ul {
-  list-style: none;
-  margin: 0px auto;
-  padding: 10px;
-  display: block;
- 
-  text-align: center;
-}
-
-#overlay {
-	z-index: 999;
-	background: rgba(0,0,0, .8);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	text-align: center;
-}
-
-#overlay img {
-  margin: 10% auto 0;
-  width: 200px;
-  @include media($large-screen) {
-  	width: 300px;
-  }
-  border-radius: 5px;
-}
-
-#photos {
-  width: 100%;
-}
-
-#photo-gallery {
-  width: 100%;
+.wrap-gallery {
+  @include outer-container;
+  @include span-columns(3);
+  @include omega(4n);
+  .first-section-gallery { @include span-columns(4); }
+  .second-section-gallery { @include span-columns(4); }
+  .third-section-gallery { @include span-columns(4); }
 }
