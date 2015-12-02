@@ -260,10 +260,10 @@ max-width: none; // to prevent UI control bug
 // from http://codepen.io/mglissmann/pen/zxXvpq
 // ------------------------------------------------------------
 .wrap-gallery {
-  @include outer-container;
-  @include span-columns(3);
-  @include omega(4n);
-  .first-section-gallery { @include span-columns(4); }
-  .second-section-gallery { @include span-columns(4); }
-  .third-section-gallery { @include span-columns(4); }
+
+		@include outer-container;
+		section { @include span-columns(4); }
+		section { @include span-columns(4); }
+		section { @include span-columns(4); }
+	
 }
