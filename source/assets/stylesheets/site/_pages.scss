@@ -67,7 +67,7 @@ background-size: cover;
 	h2 {
 		color: #fe9925;
 	}
-	strong {color: #3B8F3F;}
+	strong {color: #4caf50;}
 	@include media($large-screen) {
 		@include outer-container;
 		.article-description { @include span-columns(4); }
@@ -78,8 +78,11 @@ background-size: cover;
 // menu hero unit 
 .hero {
 	h1 {
-		font-size: 3em;
-		color: #3B8F3F;
+		font-size: 4em;
+	    color: rgba(244, 67, 54, 0.77);
+		margin-top: 0px;
+		border-bottom: 1px solid  #f44336;
+		border-top: 1px solid  #f44336;
 	}
 	@include media($large-screen) {height: 400px;}
 	background: url(../images/menu-image.png)no-repeat center center;
