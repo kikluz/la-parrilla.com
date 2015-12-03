@@ -165,7 +165,8 @@ figure.show {
   @include media($large-screen) {
     display: flex;
   }
-  background: url(../images/three-bg.png);
+  background: url(../images/back-groundimg.png);
+
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
