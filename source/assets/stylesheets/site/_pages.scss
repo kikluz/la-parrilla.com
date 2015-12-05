@@ -5,12 +5,13 @@
 .section-about {
 	padding: 50px 0px 50px 0;
 	img { height:100%;}
-	h2 {color: #3B8F3F;}
+	h2 {
+		color: #3B8F3F;
+	}
 	@include media($medium-screen) {
 		@include outer-container;
 		aside { 
 			@include span-columns(4);
-
 		}
 		article {
 			@include span-columns(8);
@@ -21,6 +22,7 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+			h2 {margin-top: 0px;}
 		}
 	}
 }
