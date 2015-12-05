@@ -131,8 +131,12 @@ background-size: cover;
 		aside { 
 			@include span-columns(5);
 		}
+	}
 		article {
+			margin-top: 30px;
+			@include media($large-screen) {
 			@include span-columns(7);
+			margin-top: 0px;
 			p {
 				font-size: 24px;
 				line-height: 31px;
