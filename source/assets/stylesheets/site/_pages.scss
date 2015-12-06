@@ -277,3 +277,96 @@ max-width: none; // to prevent UI control bug
 .popup-gallery {
 	background: rgba(160, 160, 160, 0.68);
 }
+// ------------------------------------------------------------
+// demo page http://codepen.io/robooneus/pen/taKHv
+// ------------------------------------------------------------
+.wrapper, .content,.expander, .arrow-down, .toggle-all span {
+	-webkit-transition:all .60s linear;  
+	-moz-transition:all .60s linear;
+	-o-transition:all .60s linear;  
+	transition:all .60s linear;
+}
+
+.expander {
+  width:100%;
+  background:#00829E;
+  color:rgba(255,255,255,0.8);
+  padding:1em;
+  float:left;
+  cursor:pointer;
+  position:relative;
+}
+
+.expander:hover {
+  color:rgba(255,255,255,1);
+  background:#038dab;
+}
+
+.expander.active {
+  color:#fff;
+}
+
+.expander.active:hover {
+  background:#038dab;
+  color:rgba(255,255,255,0.8);
+}
+
+
+
+.active .arrow-down {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+        
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(255,255,255,0.8);
+  position:absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+.expander:hover .arrow-down {
+  border-top: 8px solid rgba(255,255,255,1);
+}
+
+/* the magic */
+
+.wrapper {
+  float:left;
+  width:100%;
+  overflow:hidden;
+  background:#ddd;
+  margin-bottom:2em;
+}
+
+.content {
+  margin-top:-100%;
+}
+
+.wrapper.open .content {
+  margin-top:0;
+}
+
+.popupone {
+	z-index: 9999;
+	margin: 75px auto;
+	padding: 20px;
+	background: rgba(197, 235, 243, 0.93);
+	width: 300px;
+	position: relative;
+	h3 {font-family: Matrix-SmallCaps,serif;}
+	p {
+		color: #5e5e5e;
+		margin: 0 0 1em;
+		&:last-child {
+			margin: 0;
+		}
+	}
+}

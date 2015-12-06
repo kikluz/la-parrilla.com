@@ -21,3 +21,10 @@ $(document).ready(function() {
     }
   });
 });
+
+// demo for expand menu
+$(".expander").click(function() {
+  $(this).next().toggleClass("open");
+  $(this).toggleClass("active");
+});
+
