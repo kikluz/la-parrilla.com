@@ -280,6 +280,13 @@ max-width: none; // to prevent UI control bug
 // ------------------------------------------------------------
 // demo page http://codepen.io/robooneus/pen/taKHv
 // ------------------------------------------------------------
+.demo-food {
+	@include media($large-screen) {
+		@include outer-container;
+		.left-article { @include span-columns(6); }
+		.right-article { @include span-columns(6); }
+	}
+}
 .wrapper, .content,.expander, .arrow-down, .toggle-all span {
 	-webkit-transition:all .60s linear;  
 	-moz-transition:all .60s linear;
