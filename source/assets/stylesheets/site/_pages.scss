@@ -283,8 +283,9 @@ max-width: none; // to prevent UI control bug
 .demo-food {
 	@include media($large-screen) {
 		@include outer-container;
-		.left-article { @include span-columns(6); }
-		.right-article { @include span-columns(6); }
+		.left-items { @include span-columns(4); }
+		.middle-article { @include span-columns(4); }
+		.right-article { @include span-columns(4); }
 	}
 }
 .wrapper, .content,.expander, .arrow-down, .toggle-all span {
@@ -349,7 +350,7 @@ max-width: none; // to prevent UI control bug
   float:left;
   width:100%;
   overflow:hidden;
-  background:#ddd;
+  background: rgba(197, 235, 243, 0.93);
   margin-bottom:2em;
 }
 
@@ -370,7 +371,11 @@ max-width: none; // to prevent UI control bug
 	background: rgba(197, 235, 243, 0.93);
 	width: 300px;
 	position: relative;
-	h3 {font-family: Matrix-SmallCaps,serif;}
+	h3 {
+		font-family: Matrix-SmallCaps,serif;
+	    font-size: 1.5em;
+	    margin-top: 0px;
+	}
 	p {
 		color: #5e5e5e;
 		margin: 0 0 1em;
