@@ -299,10 +299,11 @@ max-width: none; // to prevent UI control bug
 .menu-image {
 	img {
 		margin: 0;
-		width: 300px;
+		width: 100%;
 		height: auto;
 	}	
 }
+
 #accordion-menu .open {
 	cursor: pointer;
 	display: block;
