@@ -279,8 +279,14 @@ max-width: none; // to prevent UI control bug
 }
 
 /// demo menu gallery from accordion
+// http://codepen.io/haibnu/pen/cBhxF
+/* Main accordion css */
 .section-menu {
-	@include media($large-screen) {
+	h3 {
+		margin-top: 0px;
+		padding: 20px;
+	}
+	@include media($medium-screen) {
 		@include outer-container;
 		.menu-item-left { @include span-columns(4); }
 		.menu-item-center { @include span-columns(4); }
@@ -288,20 +294,33 @@ max-width: none; // to prevent UI control bug
 	}
 }
 
-.expand-item {
-	max-height: 400px;
-	overflow: auto;
+/***Accordion Menu [Start]***/
+
+
+#accordion-menu .open {
+	cursor: pointer;
+	display: block;
+}
+#accordion-menu .content-info {
+	background: rgba(197, 235, 243, 0.93);
+}
+
+.popup-menu {
 	padding: 20px;
 	background: rgba(197, 235, 243, 0.93);
+	width: 300px;
 	position: relative;
+	.content {
+		max-height: 400px;
+		overflow: auto;
+	}
 	h3 {font-family: Matrix-SmallCaps,serif;}
 	p {
 		color: #5e5e5e;
+		margin: 0 0 1em;
 		&:last-child {
 			margin: 0;
 		}
 	}
 }
-
-
-
+/***Accordion Menu [End]***/
