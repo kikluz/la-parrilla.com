@@ -301,13 +301,11 @@ max-width: none; // to prevent UI control bug
 	cursor: pointer;
 	display: block;
 }
-#accordion-menu .content-info {
-	background: rgba(197, 235, 243, 0.93);
-}
-
-.popup-menu {
+ .popup-menu {
+  background: rgba(197, 235, 243, 0.93);	
+ }
+#accordion-menu .content-info .popup-menu  {
 	padding: 20px;
-	background: rgba(197, 235, 243, 0.93);
 	width: 300px;
 	position: relative;
 	.content {
