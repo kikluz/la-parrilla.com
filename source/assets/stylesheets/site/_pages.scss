@@ -296,7 +296,13 @@ max-width: none; // to prevent UI control bug
 
 /***Accordion Menu [Start]***/
 
-
+.menu-image {
+	img {
+		margin: 0;
+		width: 300px;
+		height: auto;
+	}	
+}
 #accordion-menu .open {
 	cursor: pointer;
 	display: block;
@@ -305,6 +311,7 @@ max-width: none; // to prevent UI control bug
   background: rgba(197, 235, 243, 0.93);	
  }
 #accordion-menu .content-info .popup-menu  {
+	@include media($medium-screen) {}
 	padding: 20px;
 	width: 300px;
 	position: relative;
