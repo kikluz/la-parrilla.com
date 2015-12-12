@@ -291,19 +291,17 @@ max-width: none; // to prevent UI control bug
 .expand-item {
 	max-height: 400px;
 	overflow: auto;
-}
-h3 {font-family: Matrix-SmallCaps,serif;}
-p {
-	color: #5e5e5e;
-
-	&:last-child {
-		margin: 0;
+	padding: 20px;
+	background: rgba(197, 235, 243, 0.93);
+	position: relative;
+	h3 {font-family: Matrix-SmallCaps,serif;}
+	p {
+		color: #5e5e5e;
+		&:last-child {
+			margin: 0;
+		}
 	}
 }
-.expand-item {
-    padding: 20px;
-    background: rgba(197, 235, 243, 0.93);
-    width: 300px;
-    position: relative;
-}
+
+
 
