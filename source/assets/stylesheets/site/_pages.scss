@@ -279,40 +279,31 @@ max-width: none; // to prevent UI control bug
 }
 
 /// demo menu gallery from accordion
-.popup {
-	z-index: 9999;
-	margin: 75px auto;
-	padding: 20px;
-	background: rgba(197, 235, 243, 0.93);
-	width: 300px;
-	position: relative;
-
-	.close {
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		top: 20px;
-		right: 20px;
-		opacity: 0.8;
-		transition: all 200ms;
-		font-size: 24px;
-		font-weight: bold;
-		text-decoration: none;
-		color: #666;
-		&:hover {
-			opacity: 1;
-		}
-	}
-	.content {
-		max-height: 400px;
-		overflow: auto;
-	}
-	h3 {font-family: Matrix-SmallCaps,serif;}
-	p {
-		color: #5e5e5e;
-		margin: 0 0 1em;
-		&:last-child {
-			margin: 0;
-		}
+.section-menu {
+	@include media($large-screen) {
+		@include outer-container;
+		.menu-item-left { @include span-columns(4); }
+		.menu-item-center { @include span-columns(4); }
+		.menu-item-right { @include span-columns(4); }
 	}
 }
+
+.expand-item {
+	max-height: 400px;
+	overflow: auto;
+}
+h3 {font-family: Matrix-SmallCaps,serif;}
+p {
+	color: #5e5e5e;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+.expand-item {
+    padding: 20px;
+    background: rgba(197, 235, 243, 0.93);
+    width: 300px;
+    position: relative;
+}
+
