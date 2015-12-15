@@ -278,7 +278,7 @@ max-width: none; // to prevent UI control bug
 	background: rgba(160, 160, 160, 0.68);
 }
 
-/// demo menu gallery from accordion
+/// demo menu gallery for accordion
 // http://codepen.io/haibnu/pen/cBhxF
 /* Main accordion css */
 .section-menu {
@@ -309,7 +309,8 @@ max-width: none; // to prevent UI control bug
 	display: block;
 }
  .popup-menu {
-  background: rgba(197, 235, 243, 0.93);	
+  background: rgba(197, 235, 243, 0.93);
+  p { padding: 10px;}	
  }
 #accordion-menu .content-info .popup-menu  {
 	@include media($medium-screen) {}
