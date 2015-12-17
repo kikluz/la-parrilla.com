@@ -293,7 +293,6 @@ section {
 	list-style:none;
 	padding:0;
 
-
 }
 
 ul.accordion-menu li {
@@ -370,15 +369,10 @@ ul.accordion-menu li.closed section.content {
 	padding:0 20px;
 
 }
-
 ul.accordion-menu li.open header {
-
 	background-color:#81c350;
-
-	border:1px solid #95da62;
-
 }
 
-ul.accordion-menu li.open header span.title {
+ .title span {
 	color:#FFF;
 }
