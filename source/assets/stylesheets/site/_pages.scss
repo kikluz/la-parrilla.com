@@ -177,7 +177,7 @@ max-width: none; // to prevent UI control bug
 }
 
 // ------------------------------------------------------------
-//  demo gallery
+//  demo menu for menu page
 // from http://codepen.io/anon/pen/BoMQzL
 // ------------------------------------------------------------
 .fancy-btn {
@@ -278,57 +278,118 @@ max-width: none; // to prevent UI control bug
 .popup-gallery {
 	background: rgba(160, 160, 160, 0.68);
 }
+// ------------------------------------------------------------
+// accordion http://codepen.io/AcidWolf/pen/HcvAm
+// ------------------------------------------------------------
+section {
+  @include media($large-screen) {
+  @include outer-container;
+  .left-menu { @include span-columns(4); }
+  .center-menu { @include span-columns(4); }
+  .right-menu { @include span-columns(4); }
+}
+}
+.accordion-menu {
+  list-style:none;
+  padding:0;
+  font-family:'lato',arial;
+  font-weight:400;
+  font-size:16px;
 
-/// demo menu gallery for accordion
-// http://codepen.io/haibnu/pen/cBhxF
-/* Main accordion css */
-.section-menu {
-	h3 {
-		margin-top: 0px;
-		padding: 20px;
-	}
-	@include media($medium-screen) {
-		@include outer-container;
-		.menu-item-left { @include span-columns(4); }
-		.menu-item-center { @include span-columns(4); }
-		.menu-item-right { @include span-columns(4); }
-	}
 }
 
-/***Accordion Menu [Start]***/
+ul.accordion-menu li {
 
-.menu-image {
+  background:none;
+
+  margin:7px 0;
+
+  padding:0;
+
+}
+
+ul.accordion-menu li header {
+
+  background-color:#DDD;
+
+  border:1px solid #CCC;
+
+  cursor:pointer;
+
+  padding:10px 20px;
+
+  text-align:left;
+
+  transition:all 200ms ease;
+
+  user-select:none;
+
+  -khtml-user-select:none;
+
+  -moz-user-select:none;
+
+  -ms-user-select:none;
+
+  -webkit-touch-callout:none;
+
+  -webkit-user-select:none;
+
+}
+
+ul.accordion-menu li header:hover {
+
+  background-color:#CECECE;
+
+  border-color:#C0C0C0;
+
+}
+
+ul.accordion-menu li section.content {
+
+  border-bottom:1px solid #CCC;
+
+  border-left:1px solid #CCC;
+
+  border-right:1px solid #CCC;
+
+  overflow:hidden;
+
+  padding:20px;
+
+  transition:all 200ms linear;
+
+}
+
+ul.accordion-menu li section.content p {
+
+  margin:0; 
+
+}
+section.content {
 	img {
 		margin: 0;
-		width: 100%;
+		max-width: 100%;
 		height: auto;
-	}	
+	}
+}
+ul.accordion-menu li.closed section.content {
+
+  max-height:0;
+
+  padding:0 20px;
+
 }
 
-#accordion-menu .open {
-	cursor: pointer;
-	display: block;
+ul.accordion-menu li.open header {
+
+  background-color:#81c350;
+
+  border:1px solid #95da62;
+
 }
- .popup-menu {
-  background: rgba(197, 235, 243, 0.93);
-  p { padding: 10px;}	
- }
-#accordion-menu .content-info .popup-menu  {
-	@include media($medium-screen) {}
-	padding: 20px;
-	width: 300px;
-	position: relative;
-	.content {
-		max-height: 400px;
-		overflow: auto;
-	}
-	h3 {font-family: Matrix-SmallCaps,serif;}
-	p {
-		color: #5e5e5e;
-		margin: 0 0 1em;
-		&:last-child {
-			margin: 0;
-		}
-	}
+
+ul.accordion-menu li.open header span.title {
+
+  color:#FFF;
+
 }
-/***Accordion Menu [End]***/
