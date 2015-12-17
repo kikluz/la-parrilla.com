@@ -1,1 +1,0 @@
-$("#accordion-menu .open").click(function(){$("#accordion-menu .open").removeClass("open-selected"),$("#accordion-menu .content-info").slideUp("normal"),1==$(this).next().is(":hidden")&&($(this).addClass("open-selected"),$(this).next().slideDown("normal"))}),$("#accordion-menu .content-info").hide();
