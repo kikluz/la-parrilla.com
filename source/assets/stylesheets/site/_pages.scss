@@ -292,7 +292,6 @@ section {
 .accordion-menu {
   list-style:none;
   padding:0;
-  font-family:'lato',arial;
   font-weight:400;
   font-size:16px;
 
@@ -309,10 +308,9 @@ ul.accordion-menu li {
 }
 
 ul.accordion-menu li header {
+    background-color: rgba(71, 125, 202, 0.14);
 
-  background-color:#DDD;
-
-  border:1px solid #CCC;
+  
 
   cursor:pointer;
 
@@ -338,7 +336,7 @@ ul.accordion-menu li header {
 
 ul.accordion-menu li header:hover {
 
-  background-color:#CECECE;
+     background-color: rgba(244, 134, 21, 0.42);
 
   border-color:#C0C0C0;
 
