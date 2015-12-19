@@ -58,26 +58,6 @@ background-size: cover;
 // ------------------------------------------------------------
 //  menu page 
 // ------------------------------------------------------------
-.wrapper-menu {
-	margin-top: 30px;
-}
-.section-menu {
-	@include media($large-screen) {
-		border: 4px double #d3d3d3;
-		padding: 25px 5px 15px 15px;
-	}
-	a {line-height: 2em;}
-	h2 {
-		color: #fe9925;
-	}
-	strong {color: #4caf50;}
-	@include media($large-screen) {
-		@include outer-container;
-		.article-description { @include span-columns(4); }
-		.aside-description { @include span-columns(4); }
-		.article-last { @include span-columns(4); }
-	}
-}
 // menu hero unit 
 .hero {
 	h1 {
@@ -102,6 +82,28 @@ background-size: cover;
 		margin: auto;
 		padding: 3.5em;
 		text-align: center;
+	}
+}
+
+.wrapper-menu {
+	margin-top: 30px;
+}
+.section-menu {
+	@include media($large-screen) {
+		border: 4px double #d3d3d3;
+		padding: 25px 5px 15px 15px;
+	}
+	a {line-height: 2em;}
+	h2 {
+		color: #fe9925;
+	}
+	strong {color: #4caf50;}
+
+	@include media($large-screen) {
+		@include outer-container;
+		.article-description { @include span-columns(4); }
+		.aside-description { @include span-columns(4); }
+		.article-last { @include span-columns(4); }
 	}
 }
 
@@ -370,9 +372,9 @@ ul.accordion-menu li.closed section.content {
 
 }
 ul.accordion-menu li.open header {
-	background-color:#81c350;
+	background-color:#E5EDF8;
 }
 
  .title span {
-	color:#FFF;
+	color:#F0FFFF;
 }
