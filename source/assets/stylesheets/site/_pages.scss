@@ -213,7 +213,7 @@ max-width: none; // to prevent UI control bug
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	margin: auto;
-	background: rgba(204, 204, 204, 0.5);
+    background: rgba(0, 0, 0, 0.6);
 	transition: opacity 60ms;
 	visibility: hidden;
 	opacity: 0;
