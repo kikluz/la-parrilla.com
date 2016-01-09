@@ -232,7 +232,14 @@ max-width: none; // to prevent UI control bug
 }
 
 .popup {
-
+	@include media($large-screen) {
+	    width: 400px;
+	    img {
+	    	margin: 0;
+	    	width: 518px;
+	    	height: 100%;
+	    }
+	}
 	z-index: 9999;
 	margin: 75px auto;
 	padding: 20px;
@@ -269,6 +276,7 @@ max-width: none; // to prevent UI control bug
 		}
 	}
 }
+
 // ------------------------------------------------------------
 //  demo gallery for gallery page
 // from http://codepen.io/mglissmann/pen/zxXvpq
